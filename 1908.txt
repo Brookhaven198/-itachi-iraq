@@ -1,1 +1,917 @@
-loadstring(game:HttpGet("https://pastebin.com/8Dbg8wUG"))()
+local args = {
+    [1] = "RolePlayBio",
+    [2] = "✨سِکربًتٌ آلَمًطِوٌر آيَتٌآشيَ✨"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+ 
+wait()
+ 
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+ 
+local Window = Rayfield:CreateWindow({
+   Name = "سكربت المطور ITACHI",
+   LoadingTitle = "✨شكرا لاستخدامك السكربت✨",
+   LoadingSubtitle = "✨جاري التحميل...✨",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "ITACHI"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "Key In Discord Server",
+      FileName = "YoutubeHubKey1", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+ 
+wait(0.1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "بسم الله";
+    Text = "✅تم تفعيل بنجاح✅"; -- ARAB TEAM
+    Duration = 5.0;
+})
+ 
+local MainTab = Window:CreateTab("سكربتات صنعي🗿", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("منوعة")
+ 
+Rayfield:Notify({
+   Title = "You executed the script",
+   Content = "Very cool gui",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت طيران صنعي",
+   Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/SNdSmJJk"))()
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت متنوع صنعي",
+   Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Srz1RyzZ"))()
+   end,
+})
+ 
+local MainTab = Window:CreateTab("Teleport", nil) -- Title, Image
+ 
+Rayfield:Notify({
+   Title = "You executed the script",
+   Content = "Very cool gui",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "تنقل",
+   Callback = function()
+        mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "تنقل-Teleport صنع ايتاشي"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+   end,
+})
+ 
+local MainTab = Window:CreateTab("✨ سكربتات منوعة✨", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("منوعة")
+ 
+Rayfield:Notify({
+   Title = "You executed the script",
+   Content = "Very cool gui",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "✨سكربت طيران صنعي✨",
+   Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/rp0GER3A"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "✨سكربت طيران سيارة ✨",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-VFly-English-22651"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "✨سكربت سلاسه✨",
+   Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "✨سكربت جوده✨",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-pshade-ultimate-25505"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "✨سكربت رقصات✨",
+   Callback = function()
+         loadstring(game:HttpGet("https://scriptblox.com/raw/Baseplate-Fe-All-Emote-7386"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "✨سكربت ايم✨",
+   Callback = function()
+         loadstring(game:HttpGet(('https://pastebin.com/raw/KfCHrgXh'),true))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "✨سكربت infiniteyield✨",
+   Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+ 
+local MainTab = Window:CreateTab("🏡سكربتات Brookhaven🏡", nil) -- Title, Image
+ 
+Rayfield:Notify({
+   Title = "You executed the script",
+   Content = "Very cool gui",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "Rael Hub",
+   Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Laelmano24/Rael-Hub/refs/heads/main/Universal/script.txt"))()
+   end,
+})
+ 
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت Rochips universal",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-rochips-universal-18294"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "R4D",
+   Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت ghost hub",
+   Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت ghostعربي",
+   Callback = function()
+         loadstring(game:HttpGet('https://pastebin.com/raw/2jbkJhRD'))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "Chaos hub سكربت",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Chaos-Hub-V1-28545"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "sander سكربت",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-sander-x-27361"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "shadow hub سكربت",
+   Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/realgengar/scripts/refs/heads/main/Gui%20Version.Lua"))()
+   end,
+})
+ 
+local MainSection = MainTab:CreateSection("🏡 سكربت حلو فيه سكنات +تجسس واشياء حلوه *ملاحضه*ذا مفتاحه دائمي YFDQMASrE 🏡")
+ 
+local Button = MainTab:CreateButton({
+   Name = "YHUB سكربت",
+   Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Luarmor123/community-Y-HUB/refs/heads/main/YHUB%20Brookhaven"))()
+   end,
+})
+ 
+local MainTab = Window:CreateTab("🔥سكربتات مطورين عربين🔥", nil) -- Title, Image
+ 
+Rayfield:Notify({
+   Title = "You executed the script",
+   Content = "Very cool gui",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت المطوره i2att",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-i2att-28224"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت المطوره جيون",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Jeon-26588"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "v2سكربت المطوره جيون",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-JG-Hub-29073"))()
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت المطور يوهان",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-YOHAN-HUB-29303"))()
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت المطور محمد",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-M7MD-HUB-27414"))()
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت LOL HUB",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-LOL-HUB-28538"))()
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت المطور علي",
+   Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-9VER-IRAQ-25365"))()
+   end,
+})
+ 
+ local Button = MainTab:CreateButton({
+   Name = "سكربت sp hub",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-SP-Hub-New-Uptade-Script-29166"))()
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت المطور اشلي",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Snake-Hub-25887"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت المطور محمد",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-OLKT2-IRAQ-28279"))()
+   end,
+})
+ 
+local MainTab = Window:CreateTab("☠️سكربتات تخريب☠️", nil) -- Title, Image
+ 
+Rayfield:Notify({
+   Title = "You executed the script",
+   Content = "Very cool gui",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت الرحمه الاحمر",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/VR7-ON-TOP"))()
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت الرحمه الازرق",
+   Callback = function()
+         print("Clicked")loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت الرحمه الهلال",
+   Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/n0kc/AtomicHub/main/Map-Al-Biout.lua"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت قتل وسحب",
+   Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/SnoobG/Lua-Script-s/refs/heads/main/BrookHaven%20TvonHub'))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكربت ج😉",
+   Callback = function()
+         loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "سكرت الاختفاء☠️",
+   Callback = function()
+         loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+   end,
+})
+ 
+ 
+
+local Tab1 = Window:CreateTab("الرأس", "smile")
+local Tab2 = Window:CreateTab("الاجسام", "circle-user-round")
+
+local Section = Tab1:CreateSection("Head {Character}")
+local Button = Tab1:CreateButton({
+   Name = "عيون الزرق👤",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 16580493236
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab1:CreateButton({
+   Name = "فضائي👤",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 3210773801
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab1:CreateButton({
+   Name = "هيدلس👤",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 134082579
+    },
+    [3] = "Roblox20"
+}
+
+local Button = Tab1:CreateButton({
+   Name = "رجل مقطوعه",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 139607718,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+
+local Section = Tab2:CreateSection("اجسام اولاد👦")
+local Button = Tab2:CreateButton({
+   Name = "جسم ولد رشيق اسود",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 17873152058,
+        [2] = 17873151683,
+        [3] = 17873151726,
+        [4] = 17873151827,
+        [5] = 17873152017,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab2:CreateButton({
+   Name = "جسم ولد رشيق ابيض",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 82491774691726,
+        [2] = 17873151683,
+        [3] = 17873151726,
+        [4] = 17873151827,
+        [5] = 17873152017,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab2:CreateButton({
+   Name = "Mini Plushie (جسم قزم ولد/بنات)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 18865136555,
+        [2] = 14579959062,
+        [3] = 14579959191,
+        [4] = 14579959249,
+        [5] = 14579963667,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+
+local Section = Tab2:CreateSection("اجسام بنات👩")
+local Button = Tab2:CreateButton({
+   Name = "جسم بنات ايمو ",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 15599926323,
+        [2] = 15599926845,
+        [3] = 15599926809,
+        [4] = 1,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end,
+})
+local Button = Tab2:CreateButton({
+   Name = "جسم بنات ايمو2",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 96491916349570,
+        [2] = 86499698,
+        [3] = 86499716,
+        [4] = 1,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end,
+})
+local Button = Tab2:CreateButton({
+   Name = "جسم القزم ولد/ بنات",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 18865136555,
+        [2] = 14579959062,
+        [3] = 14579959191,
+        [4] = 14579959249,
+        [5] = 14579963667,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end,
+})
+local Button = Tab2:CreateButton({
+   Name = "جسم بنات v2 ابيض",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14854317552,
+        [2] = 14785351711,
+        [3] = 14785351713,
+        [4] = 14785351880,
+        [5] = 14785351756,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end,
+})
+local Button = Tab2:CreateButton({
+   Name = "جسم بنات v2 اسود",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14854350553,
+        [2] = 14785351711,
+        [3] = 14785351713,
+        [4] = 14785351880,
+        [5] = 14785351756,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "ارجل بنات ايمو حلوه",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 14842193436,
+        [5] = 14842193136,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab1:CreateButton({
+   Name = "رجل مقطوعه",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 139607718,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+
+local MainTab = Window:CreateTab("✨ميزات✨", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("✨")
+ 
+Rayfield:Notify({
+   Title = "You executed the script",
+   Content = "Very cool gui",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "✨قفز لا نهائي✨",
+   Callback = function()
+       --Toggles the infinite jump between on or off on every script run
+_G.infinjump = not _G.infinjump
+ 
+if _G.infinJumpStarted == nil then
+	--Ensures this only runs once to save resources
+	_G.infinJumpStarted = true
+ 
+	--Notifies readiness
+	game.StarterGui:SetCore("SendNotification", {Title="Youtube Hub"; Text="Infinite Jump Activated!"; Duration=5;})
+ 
+	--The actual infinite jump
+	local plr = game:GetService('Players').LocalPlayer
+	local m = plr:GetMouse()
+	m.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+			humanoid = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+			humanoid:ChangeState('Jumping')
+			wait()
+			humanoid:ChangeState('Seated')
+			end
+		end
+	end)
+end
+   end,
+})
+ 
+local Slider = MainTab:CreateSlider({
+   Name = "✨السرعه✨",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "sliderws", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+   end,
+})
+ 
+local Slider = MainTab:CreateSlider({
+   Name = "✨القفز✨",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "sliderjp", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+   end,
+})
+ 
+local Input = MainTab:CreateInput({
+   Name = "✨السرعه✨",
+   PlaceholderText = "1-500",
+   RemoveTextAfterFocusLost = true,
+   Callback = function(Text)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Text)
+   end,
+})
+ 
+ 
+local MainTab = Window:CreateTab("لل صملات", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("صملات")
+ 
+Rayfield:Notify({
+   Title = "You executed the script",
+   Content = "Very cool gui",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "1 AFK",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Anti-afk-script-5795"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "2 AFK",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AntiAFK-script-18076"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "3 AFK",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-RBX-Anti-Afk-script-23931"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "4 AFK",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-asgf-syugfGF-v-5831"))()
+   end,
+})
+ 
+local MainTab = Window:CreateTab("🛡️سكربتات الحمايه🛡️", nil) -- Title, Image
+ 
+Rayfield:Notify({
+   Title = "You executed the script",
+   Content = "Very cool gui",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "🛡️سكربت محد يقدر يطيرك🛡️",
+   Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "🛡️سكربت تطير بل كنبه🛡️",
+   Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "🛡️سكربت يحميك من الي يفعل عليك🛡️",
+   Callback = function()
+         loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FE-Fling-GUI-10927"))()
+   end,
+})
+ 
+ 
+local MainTab = Window:CreateTab("الحقوق👤", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("حسابي الروب")
+ 
+local Button = MainTab:CreateButton({
+   Name = "حسابي الروب : Dnawe1",
+   Callback = function()
+ 
+   end,
+}) 
+Rayfield:Notify({
+   Title = "You executed the script",
+   Content = "Very cool gui",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+ 
+local MainSection = MainTab:CreateSection("حسابي تيك")
+ 
+local Button = MainTab:CreateButton({
+   Name = "حسابي اليتك : bu_p01",
+   Callback = function()
+ 
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "اذا تريدون اضيف شي لل سكربت تواصلو وياي 👆",
+   Callback = function()
+ 
+   end,
+})
