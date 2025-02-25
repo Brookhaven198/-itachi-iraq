@@ -6,9 +6,9 @@
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/VisualRoblox/Roblox/main/UI-Libraries/Visual%20Command%20UI%20Library/Source.lua', true))()
 
 local Window = Library:CreateWindow({
-    Name = 'صنع ب تطوير عراقي من قبل آشلي',
-    IntroText = 'سكربـت آشلي گانيس | Snake Hub Brookhaven 🏡',
-    IntroIcon = 'rbxassetid://16905163783',
+    Name = 'سكربت المطور Iyachi',
+    IntroText = 'سكربـت المطور Itachi  🏡',
+    IntroIcon = 'rbxassetid://111989185212309',
     IntroBlur = true,
     IntroBlurIntensity = 15,
     Theme = Library.Themes.dark,
@@ -22,39 +22,39 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
 wait(0.1)
 game.StarterGui:SetCore("SendNotification", {
     Title = "جارِ تحميل سكربت ";
-    Text = " سكربت اشلي گانيس "; -- ARAB TEAM
+    Text = " سكربت Itachi "; -- ARAB TEAM
     Duration = 5;
 })
 wait(0.1)
 game.StarterGui:SetCore("SendNotification", {
-    Title = "لحظة من فضلك ";
-    Text = " سكربت اشلي گانيس "; -- ARAB TEAM
+    Title = "✨ثواني يا حلو✨ ";
+    Text = " سكربت Itachi "; -- ARAB TEAM
     Duration = 5;
 })
 local args = {
     [1] = "RolePlayName",
-    [2] = "SCRPIT ASHLEY CANIS | SNAKE HUB"
+    [2] = "سكربت المطور Itachi😼"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
 wait(0.1)
 local args = {
     [1] = "RolePlayBio",
-    [2] = "\240\159\145\190 سكربـت المطـور اشلـي \240\159\145\190"}
+    [2] = "\240\159\145\190 سكربـت المطور Itachi \240\159\145\190"}
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
 wait(0.5)
 game.StarterGui:SetCore("SendNotification", {
-    Title = "تم البرمجة من قبل آشلي ";
-    Text = " تم تفعيل سكربت آشلي "; -- ARAB TEAM
+    Title = "شكرا لاستخدامك السكربت يا حلو ✨✨✨ ";
+    Text = " تم تفعيل سكربت Itachi "; -- ARAB TEAM
     Duration = 5;
 })
 
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/speedwave1/speed_wave/refs/heads/main/Aya")))()
 MakeWindow({
   Hub = {
-    Title = "SNAKE HUB | 1.6V",
-    Animation = "SCRPIT ASHLEY CANIS "
+    Title = "Itachi Hub",
+    Animation = "Itachi "
   },
   Key = {
     KeySystem = false,
@@ -72,7 +72,7 @@ MakeWindow({
 })
 
 MinimizeButton({
-  Image = "rbxassetid://16905163783",
+  Image = "rbxassetid://111989185212309",
   Size = {40, 40},
   Color = Color3.fromRGB(10, 10, 10),
   Corner = true,
@@ -81,28 +81,28 @@ MinimizeButton({
 })
 
 
-local Main = MakeTab({Name = "info | معلومات"})
+local Main = MakeTab({Name = "👤الحقوق👤"})
 local Image = AddImageLabel(Main, {
-  Name = "SNAKE HUB THE BEST",
-  Image = "rbxassetid://16905163783"
+  Name = "Iachi King ",
+  Image = "rbxassetid://111989185212309"
 })
 local Paragraph = AddParagraph(Main, {"سكربت عبارة عن مجموعة كبيرة من مميزات استكشفها بنفسك ", "bom dia meus manos"})
 AddButton(Main, {
   Name = " انسخ حسابي تيك ",
   Callback = function()
-    setclipboard('ai99._2')
+    setclipboard('bu_p01')
   end
 })
 AddButton(Main, {
-  Name = "انسخ الرابط قناة تلي",
+  Name = "حسابي الروب",
   Callback = function()
-    setclipboard('https://t.me/AshleySaif')
+    setclipboard('Dnawe1')
   end
 })
-local Main = MakeTab({Name = "Head&Leg | رؤوس ورجل"})
-local Paragraph = AddParagraph(Main, {"👾الرؤوس | Head 👾", "bom dia meus manos"})
+local Main = MakeTab({Name = "✨ رؤوس ورجل✨"})
+local Paragraph = AddParagraph(Main, {"✨الرؤوس✨", "bom dia meus manos"})
 AddButton(Main, {
-  Name = "راس روبوت | Head Emo",
+  Name = "راس روبوت ",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -121,7 +121,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "راس المخفي | headless",
+  Name = "راس المخفي ",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -140,7 +140,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "راس رول&گوبي | cheeks",
+  Name = "راس رول&گوبي ",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -159,7 +159,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = " راس عيون زرقاء | Head eye blue",
+  Name = " راس عيون زرقاء ",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -177,9 +177,9 @@ AddButton(Main, {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
   end
 })
-local Paragraph = AddParagraph(Main, {"الارجل ", "bom dia meus manos"})
+local Paragraph = AddParagraph(Main, {"✨الارجل✨", "bom dia meus manos"})
 AddButton(Main, {
-  Name = "رجل العظام الاسود | Black bone leg",
+  Name = "رجل العظام الاسود",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -198,7 +198,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "رجل مقطوع | Koroblox",
+  Name = "رجل مقطوع ",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -217,7 +217,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "رجل العظام رصاصي | Grey bone leg",
+  Name = "رجل العظام رصاصي ",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -236,7 +236,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "رجل رول | Roll Leg",
+  Name = "رجل رول ",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -254,8 +254,8 @@ AddButton(Main, {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
   end
 })
-local Main = MakeTab({Name = "الاجسام | Body"})
-local Paragraph = AddParagraph(Main, {"قـائـمـة - اجـسـام - Girls - 📌"})
+local Main = MakeTab({Name = "✨الاجسام✨"})
+local Paragraph = AddParagraph(Main, {"قـائـمـة - اجـسـام "})
 
 AddButton(Main, {
   Name = "جـسـم بـنـت - Blush Fashion -",
@@ -986,10 +986,10 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 end
 })
 
-local Paragraph = AddParagraph(Main, {"• قسم اشياء بالايد -ملاحظه يمكن ما تظهر لكم بشكل واضح اما سكنات بنات اوضح .  •"})
+local Paragraph = AddParagraph(Main, {"✨قسم اشياء بالايد✨"})
 
 AddButton(Main, {
-  Name = " مشروب طاقة ابيض",
+  Name = "✨مشروب monster ابيض✨",
   Callback = function()
     local args = {
     [1] = "wearWalkStyle",
@@ -1000,7 +1000,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 end
 })
 AddButton(Main, {
-  Name = " كشاف ضوء",
+  Name = "✨كشاف ضوء✨",
   Callback = function()
     local args = {
     [1] = "wearWalkStyle",
@@ -1011,7 +1011,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 end
 })
 AddButton(Main, {
-  Name = " مشروب طاقة وردي",
+  Name = "✨مشروب monster وردي✨",
   Callback = function()
     local args = {
     [1] = "wearWalkStyle",
@@ -1022,7 +1022,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 end
 })
 AddButton(Main, {
-  Name = " فأس اسود",
+  Name = " ✨فأس اسود✨",
   Callback = function()
     local args = {
     [1] = "wearWalkStyle",
@@ -1033,7 +1033,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 end
 })
 AddButton(Main, {
-  Name = "سبراي صبغ اسود ",
+  Name = "✨بخاخ اسود✨ ",
   Callback = function()
     local args = {
     [1] = "wearWalkStyle",
@@ -1044,7 +1044,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 end
 })
 AddButton(Main, {
-  Name = "سبراي صبغ ابيض",
+  Name = "✨ بخاخ ابيض✨",
   Callback = function()
     local args = {
     [1] = "wearWalkStyle",
@@ -1055,7 +1055,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 end
 })
 AddButton(Main, {
-  Name = "جوال بالايد اتوقع",
+  Name = "✨جوال✨",
   Callback = function()
     local args = {
     [1] = "wearWalkStyle",
@@ -1066,89 +1066,11 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 end
 })
 AddButton(Main, {
-  Name = "فلوس  ",
+  Name = "✨فلوس✨",
   Callback = function()
     local args = {
     [1] = "wearWalkStyle",
     [2] = 18444236012,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-local Paragraph = AddParagraph(Main, {"• قسم Cowboy .  •"})
-AddButton(Main, {
-  Name = " شفقة البني صحراوي",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 15923060526,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = " ستارز",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 139645578773715,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = " شفقة اسود على خصر",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 92158771544863,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = " شفقة على راس ابيض صحراوي",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 15923076836,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = "شفقة امريكا نادرة بني على صحراوي ",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 71166495168824,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = "شفقة علم امريكا",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 29715011,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = "شفقة ورديه على ابيض",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 17826047479,
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
