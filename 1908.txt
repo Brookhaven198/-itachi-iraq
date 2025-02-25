@@ -80,6 +80,7 @@ AddButton(Main, {
     setclipboard('Dnawe1')
   end
 })
+
 local Main = MakeTab({Name = "سكربتات من صنع مطورين"})
 AddButton(Main, {
   Name = "سكربت جودة | HDR Scrpit",
@@ -1444,44 +1445,6 @@ local args1 = {
 end 
 }) 
 
-local section = AddSection(Main, {"حط كود اغنية داخل سيارة"})
- 
-
-AddTextBox(Main, {
-  Name = "ادخل كود الاغنية  داخل بوكس ",
-  Default = "",
-  PlaceholderText = "ادخل الاغنيه سيارة ",
-  ClearText = true,
-  Callback = function(Value)
-local args1 = {
-            [1] = "SkateBoard"
-        }
-        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1NoMoto1rVehicle1s"):FireServer(unpack(args1))
- 
-        -- Replacing the static value with the input from the textbox
-        local args2 = {
-            [1] = "PickingScooterMusicText",
-            [2] = Value -- Here, we use the textbox value to replace 35935204
-        }
-        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1NoMoto1rVehicle1s"):FireServer(unpack(args2))
-        
-end 
-}) 
-local section = AddSection(Main, {"حط كود اغنية البيت"})
- 
-AddTextBox(Main, {
-  Name = "ادخل كود الاغنية  داخل بوكس ",
-  Default = "",
-  PlaceholderText = "ادخل كود اغنيه بيت ",
-  ClearText = true,
-  Callback = function(input)
-local args = {
-            [1] = "PickHouseMusicText",
-            [2] = input -- Use the user's input here
-        }
-        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Player1sHous1e"):FireServer(unpack(args))
-    end
-})
 AddButton(Main, {
   Name = "صوت جوال اندرويد عالي",
   Callback = function()
@@ -1498,6 +1461,9 @@ local args = {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
   end
 })
+
+local Main = MakeTab({Name = "✨السيارة✨ "})
+local section = AddSection(Main, {"خصائص السيارة "})
 
 AddButton(Main, {
   Name = "  	نار في سياره ",
