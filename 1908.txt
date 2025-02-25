@@ -80,6 +80,82 @@ AddButton(Main, {
     setclipboard('Dnawe1')
   end
 })
+local Main = MakeTab({Name = "سكربتات من صنع مطورين"})
+AddButton(Main, {
+  Name = "سكربت جودة | HDR Scrpit",
+  Callback = function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Rtx-graphics-25102"))()
+  end
+})
+
+AddButton(Main, {
+  Name = "سكربت رقصات | dance Scrpit",
+  Callback = function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Baseplate-Fe-All-Emote-7386"))()
+  end
+})
+
+AddButton(Main, {
+  Name = "مشيات | walk",
+  Callback = function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))()
+  end
+})
+
+AddButton(Main, {
+  Name = "سكربت نسخ سكنـات | Copy Skin Scrpit",
+  Callback = function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-rochips-universal-18294"))()
+  end
+})
+
+AddButton(Main, {
+  Name = "سكربت الهلال | Scrpit Moon",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/n0kc/AtomicHub/main/Map-Al-Biout.lua"))()
+  end
+})
+
+AddButton(Main, {
+  Name = "سكربت اختفاء | disappearing script",
+  Callback = function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+  end
+})
+
+AddButton(Main, {
+  Name = " سكربت طيران كنبة  | Scrpit Fly sit",
+  Callback = function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/TXMNj1yy'))()
+  end
+})
+
+AddButton(Main, {
+  Name = " سكربت طيران | Fly ",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AshleyCanis/Qq/refs/heads/main/Ashley"))()
+  end
+})
+
+AddButton(Main, {
+  Name = " سكربـت اغاني | Music Scrpit",
+  Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
+  end
+})
+AddButton(Main, {
+  Name = " سكربت سرعه سياره | Car Speeds Scrpit",
+  Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
+  end
+})
+
+AddButton(Main, {
+  Name = "سكربت شفت | Scrpit Shift ",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sector9922/SECTOR-SHIFT-LOCK/main/SECTOR%20SHIFT%20LOCK"))()
+  end
+})
 local Main = MakeTab({Name = "✨ رؤوس ورجل✨"})
 local Paragraph = AddParagraph(Main, {"✨الرؤوس✨", "bom dia meus manos"})
 AddButton(Main, {
@@ -1343,83 +1419,6 @@ AddButton(Main, {
     Name = "فوق المدرسة",
     Description = "Teleporta para as coordenadas Em Cima da Escola",
     Callback = teleportToOnTopOfSchool
-})
-
-local Main = MakeTab({Name = "سكربتات من صنع مطورين"})
-AddButton(Main, {
-  Name = "سكربت جودة | HDR Scrpit",
-  Callback = function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Rtx-graphics-25102"))()
-  end
-})
-
-AddButton(Main, {
-  Name = "سكربت رقصات | dance Scrpit",
-  Callback = function()
-    loadstring(game:HttpGet("https://scriptblox.com/raw/Baseplate-Fe-All-Emote-7386"))()
-  end
-})
-
-AddButton(Main, {
-  Name = "مشيات | walk",
-  Callback = function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))()
-  end
-})
-
-AddButton(Main, {
-  Name = "سكربت نسخ سكنـات | Copy Skin Scrpit",
-  Callback = function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-rochips-universal-18294"))()
-  end
-})
-
-AddButton(Main, {
-  Name = "سكربت الهلال | Scrpit Moon",
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/n0kc/AtomicHub/main/Map-Al-Biout.lua"))()
-  end
-})
-
-AddButton(Main, {
-  Name = "سكربت اختفاء | disappearing script",
-  Callback = function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
-  end
-})
-
-AddButton(Main, {
-  Name = " سكربت طيران كنبة  | Scrpit Fly sit",
-  Callback = function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/TXMNj1yy'))()
-  end
-})
-
-AddButton(Main, {
-  Name = " سكربت طيران | Fly ",
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AshleyCanis/Qq/refs/heads/main/Ashley"))()
-  end
-})
-
-AddButton(Main, {
-  Name = " سكربـت اغاني | Music Scrpit",
-  Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
-  end
-})
-AddButton(Main, {
-  Name = " سكربت سرعه سياره | Car Speeds Scrpit",
-  Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
-  end
-})
-
-AddButton(Main, {
-  Name = "سكربت شفت | Scrpit Shift ",
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sector9922/SECTOR-SHIFT-LOCK/main/SECTOR%20SHIFT%20LOCK"))()
-  end
 })
 local Main = MakeTab({Name = " قسم الاغاني والسيارة "})
 local section = AddSection(Main, {"حط كود اغنية سكيت بورد "})
