@@ -34,7 +34,7 @@ game.StarterGui:SetCore("SendNotification", {
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/speedwave1/speed_wave/refs/heads/main/Aya")))()
 MakeWindow({
   Hub = {
-    Title = "Itachi Hub",
+    Title = "سكربت  Itachi Hub",
     Animation = "Itachi "
   },
   Key = {
@@ -55,10 +55,10 @@ MakeWindow({
 MinimizeButton({
   Image = "rbxassetid://111989185212309",
   Size = {40, 40},
-  Color = Color3.fromRGB(10, 10, 10),
+  Color = Color3.fromRGB(8B, 00, 00),
   Corner = true,
   Stroke = true,
-  StrokeColor = Color3.fromRGB(10, 10, 10)
+  StrokeColor = Color3.fromRGB(88, 88, 88)
 })
 
 
@@ -67,7 +67,7 @@ local Image = AddImageLabel(Main, {
   Name = "Iachi King ",
   Image = "rbxassetid://111989185212309"
 })
-local Paragraph = AddParagraph(Main, {"سكربت عبارة عن مجموعة كبيرة من مميزات استكشفها بنفسك ", "bom dia meus manos"})
+local Paragraph = AddParagraph(Main, {"✨حساباتي لل توصل معي لو تبون اي شي اصيفه لل سكربت✨ ", "bom dia meus manos"})
 AddButton(Main, {
   Name = " انسخ حسابي تيك ",
   Callback = function()
@@ -81,78 +81,78 @@ AddButton(Main, {
   end
 })
 
-local Main = MakeTab({Name = "سكربتات من صنع مطورين"})
+local Main = MakeTab({Name = "✨Brookhaven✨"})
 AddButton(Main, {
-  Name = "سكربت جودة | HDR Scrpit",
+  Name = "✨سكربت جودة✨",
   Callback = function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Rtx-graphics-25102"))()
   end
 })
 
 AddButton(Main, {
-  Name = "سكربت رقصات | dance Scrpit",
+  Name = "✨سكربت رقصات✨",
   Callback = function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Baseplate-Fe-All-Emote-7386"))()
   end
 })
 
 AddButton(Main, {
-  Name = "مشيات | walk",
+  Name = "✨ مشيات ✨",
   Callback = function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))()
   end
 })
 
 AddButton(Main, {
-  Name = "سكربت نسخ سكنـات | Copy Skin Scrpit",
+  Name = "✨سكربت نسخ سكنـات✨",
   Callback = function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-rochips-universal-18294"))()
   end
 })
 
 AddButton(Main, {
-  Name = "سكربت الهلال | Scrpit Moon",
+  Name = "✨سكربت الهلال✨",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/n0kc/AtomicHub/main/Map-Al-Biout.lua"))()
   end
 })
 
 AddButton(Main, {
-  Name = "سكربت اختفاء | disappearing script",
+  Name = "✨سكربت اختفاء✨",
   Callback = function()
     loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
   end
 })
 
 AddButton(Main, {
-  Name = " سكربت طيران كنبة  | Scrpit Fly sit",
+  Name = " ✨سكربت طيران كنبة ✨",
   Callback = function()
     loadstring(game:HttpGet('https://pastebin.com/raw/TXMNj1yy'))()
   end
 })
 
 AddButton(Main, {
-  Name = " سكربت طيران | Fly ",
+  Name = "✨سكربت طيران✨",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/AshleyCanis/Qq/refs/heads/main/Ashley"))()
   end
 })
 
 AddButton(Main, {
-  Name = " سكربـت اغاني | Music Scrpit",
+  Name = " ✨ سكربـت اغاني ✨",
   Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
   end
 })
 AddButton(Main, {
-  Name = " سكربت سرعه سياره | Car Speeds Scrpit",
+  Name = " ✨سكربت سرعه سياره✨",
   Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
   end
 })
 
 AddButton(Main, {
-  Name = "سكربت شفت | Scrpit Shift ",
+  Name = "✨سكربت شفت ✨ ",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Sector9922/SECTOR-SHIFT-LOCK/main/SECTOR%20SHIFT%20LOCK"))()
   end
@@ -160,7 +160,7 @@ AddButton(Main, {
 local Main = MakeTab({Name = "✨ رؤوس ورجل✨"})
 local Paragraph = AddParagraph(Main, {"✨الرؤوس✨", "bom dia meus manos"})
 AddButton(Main, {
-  Name = "راس روبوت ",
+  Name = "✨راس روبوت✨ ",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -179,7 +179,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "راس المخفي ",
+  Name = "✨راس المخفي✨ ",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -198,7 +198,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "راس رول&گوبي ",
+  Name = "✨راس رول-كوبي✨ ",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -217,7 +217,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = " راس عيون زرقاء ",
+  Name = " ✨راس عيون زرقاء✨ ",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -237,7 +237,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 local Paragraph = AddParagraph(Main, {"✨الارجل✨", "bom dia meus manos"})
 AddButton(Main, {
-  Name = "رجل العظام الاسود",
+  Name = "✨رجل العظام الاسود✨",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -256,7 +256,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "رجل مقطوع ",
+  Name = "✨رجل مقطوع✨",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -275,7 +275,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "رجل العظام رصاصي ",
+  Name = "✨رجل العظام رصاصي✨",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -294,7 +294,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "رجل رول ",
+  Name = "✨رجل رول✨",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -313,10 +313,10 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 local Main = MakeTab({Name = "✨الاجسام✨"})
-local Paragraph = AddParagraph(Main, {"قـائـمـة - اجـسـام "})
+local Paragraph = AddParagraph(Main, {"✨اجسام بنات✨ "})
 
 AddButton(Main, {
-  Name = "جـسـم بـنـت - Blush Fashion -",
+  Name = "✨جسم ايمو بنت✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -337,7 +337,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 
 AddButton(Main, {
-  Name = "جـسـم بـنـت - Fashion Doll -",
+  Name = "✨جسم بنت ايمو ✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -357,7 +357,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "جـسـم بـنـت - Modern Woman -",
+  Name = "✨جسم بنت✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -377,7 +377,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "جـسـم بـنـت - Chibi Doll  -",
+  Name = "✨جسم بنت ✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -398,7 +398,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 
 AddButton(Main, {
-  Name = "جـسـم بـنـت - Baddie Doll",
+  Name = "✨جسم بنت✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -419,7 +419,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 
 AddButton(Main, {
-  Name = "✨جسم بنت v1✨",
+  Name = "✨جسم بنت✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -440,7 +440,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 
 AddButton(Main, {
-  Name = "✨جسم بنت v2✨",
+  Name = "✨جسم بنت ✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -461,7 +461,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 
 AddButton(Main, {
-  Name = "✨جسم بنت ايمو✨",
+  Name = "✨جسم بنت ✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
