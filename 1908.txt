@@ -6,7 +6,7 @@
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/VisualRoblox/Roblox/main/UI-Libraries/Visual%20Command%20UI%20Library/Source.lua', true))()
 
 local Window = Library:CreateWindow({
-    Name = 'سكربت المطور Iyachi',
+    Name = '',
     IntroText = 'سكربـت المطور Itachi  🏡',
     IntroIcon = 'rbxassetid://111989185212309',
     IntroBlur = true,
@@ -2178,9 +2178,9 @@ AddButton(Main, {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
   end
 })
-local Main = MakeTab({Name = "اللاعب | تفعيلات"})
+local Main = MakeTab({Name = "👤الاعب👤"})
 AddButton(Main, {
-  Name = "امر تعليق السيرفر",
+  Name = "✨يعلق السيرفر✨",
   Callback = function()
 tools = "FireX"
         shutdownserver = true
@@ -2225,20 +2225,13 @@ tools = "FireX"
   end
 })
 AddButton(Main, {
-  Name = " يطردك انتَ فقط | امر طرد الكل",
-  Callback = function()
-    local player = game.Players.LocalPlayer
-        player:Kick("مصدق يطرد الكل؟")
-  end
-})
-AddButton(Main, {
-  Name = "امر تدمير العالم",
+  Name = "✨تدمير العالم ☠️✨",
   Callback = function()
     game.Workspace:ClearAllChildren()
   end
 })
 AddTextBox(Main, {
-  Name = "سرعة | Speed",
+  Name = "✨سرعة | Speed✨",
   Default = "",
   PlaceholderText = "ادخل رقم",
   ClearText = true,
@@ -2256,7 +2249,7 @@ game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
   end
 })
 AddTextBox(Main, {
-  Name = "Fov | شاشه",
+  Name = "✨Fov | شاشه✨",
   Default = "",
   PlaceholderText = "ادخل رقم",
   ClearText = true,
@@ -2267,7 +2260,7 @@ Camera.FieldOfView = FovNumber
   end
 })
 AddTextBox(Main, {
-  Name = "Spin | دوران",
+  Name = "✨Spin | دوران✨",
   Default = "",
   PlaceholderText = "ادخل رقم",
   ClearText = true,
@@ -2282,7 +2275,7 @@ Spin.AngularVelocity = Vector3.new(100,Spinspeed,0)
   end
 })
 AddButton(Main, {
-  Name = "اخذ كنبة ",
+  Name = "✨اضغط لاخذ الكنبة✨ ",
   Callback = function()
     local args={[1]="PickingTools",[2]="Couch"};game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l"):InvokeServer(unpack(args))
   end
@@ -2313,7 +2306,7 @@ end
 
 -- Adiciona o botão de alternância "Infinitejump"
 local Toggle = AddToggle(Main, {
-    Name = "قفز لا نهائي | Inf Jump",
+    Name = "✨قفز لا نهائي✨",
     Default = false,
     Callback = onInfiniteJumpToggle
 })
@@ -2378,9 +2371,9 @@ end
 
 -- Adicionando a caixa de texto para entrada do nome ou apelido do jogador
 AddTextBox(Main, {
-    Name = " دخل اول ثلاث أحرف من اسم اللاعب",
+    Name = "✨ادخل اول ثلاث حروف من اسم الاعب✨",
     Default = "",
-    PlaceholderText = "دخل اسم اللاعب",
+    PlaceholderText = "✨دخل اسم اللاعب✨",
     ClearText = true,
     Callback = function(value)
         if value == "" then
@@ -2417,7 +2410,7 @@ AddTextBox(Main, {
 
 -- Adicionando o toggle para ativar/desativar a visualização
 AddToggle(Main, {
-    Name = "شاهد | View",
+    Name = "✨مشاهده✨",
     Default = false,
     Callback = function(enabled)
         viewEnabled = enabled
@@ -2452,7 +2445,7 @@ local function maintainView()
     end
 end
 
-local section = AddSection(Main, {"اذا احد طردك تقدر تؤخر الطرد"})
+local section = AddSection(Main, {"✨ازالة الحضر من البيت✨"})
 local noclipEnabled = false
 local runService = game:GetService("RunService")
 
