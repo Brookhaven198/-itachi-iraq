@@ -1,17 +1,4 @@
 
-game.Players.LocalPlayer.Character.Humanoid.Health = 0
-wait(0.1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "جارِ تحميل سكربت ";
-    Text = " سكربت المطور ITACHI  "; -- ARAB TEAM
-    Duration = 5;
-})
-wait(0.1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "ثواني يا حلوو✨ ";
-    Text = " سكربت المطور ITACHI  "; -- ARAB TEAM
-    Duration = 5;
-})
 local args = {
     [1] = "RolePlayName",
     [2] = "✨ شكرا لاستخدامك السكربت يا حلو اتمنى ان يعجبك✨"
@@ -27,11 +14,10 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
 wait(0.5)
 game.StarterGui:SetCore("SendNotification", {
     Title = "صنع المطور ITACHI  ";
-    Text = " تم تحميل السكربت "; -- ARAB TEAM
+    Text = " تم تفعيل السكربت "; -- ARAB TEAM
     Duration = 5;
 })
 
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/speedwave1/speed_wave/refs/heads/main/Aya")))()
 MakeWindow({
   Hub = {
     Title = "سكربت ITACHI | SCRPIT ITACHI  ",
