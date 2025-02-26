@@ -1972,18 +1972,18 @@ AddButton(Main, {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
   end
 })
+
 AddButton(Main, {
   Name = "زهراء",
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "زْهـرٍآء
+    [2] = "زْهـرٍآء"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
   end
 })
-
 
 AddButton(Main, {
   Name = "فََاَطْـمَِـهْ",
@@ -2050,13 +2050,12 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "رقٌـ,ـية
+    [2] = "رقٌـ,ـية"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
   end
 })
-
 
 AddButton(Main, {
   Name = "نرجس",
