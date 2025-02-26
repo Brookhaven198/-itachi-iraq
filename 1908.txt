@@ -413,7 +413,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 
 AddButton(Main, {
-  Name = "✨جسم بنت الدلوعه ✨",
+  Name = "✨جسم بنت يد صغيره ✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -434,7 +434,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 
 AddButton(Main, {
-  Name = "✨جسم بنت يد صغيره ✨",
+  Name = "✨جسم بنت الدلوعه ✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
