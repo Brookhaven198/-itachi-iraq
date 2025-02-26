@@ -61,6 +61,7 @@ MinimizeButton({
   StrokeColor = Color3.fromRGB(10, 10, 10)
 })
 
+
 local Paragraph = AddParagraph(Main, {"سكربت عبارة عن مجموعة كبيرة من مميزات استكشفها بنفسك ", "bom dia meus manos"})
 AddButton(Main, {
   Name = " انسخ حسابي تيك ",
