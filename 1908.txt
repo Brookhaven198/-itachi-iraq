@@ -168,6 +168,13 @@ AddButton(Main, {
 })
 
 AddButton(Main, {
+  Name = "✨ازالة لاق✨",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+  end
+})
+
+AddButton(Main, {
   Name = " ✨ سكربـت اغاني ✨",
   Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
@@ -1620,6 +1627,52 @@ end
 
 local Main = MakeTab({Name = "✨البيت✨"})
 
+local section = AddSection(Main, {"✨ازالة الحضر من البيت✨"})
+local noclipEnabled = false
+local runService = game:GetService("RunService")
+
+-- Função para definir CanCollide para todas as partes do personagem
+local function setCharacterCanCollide(character, canCollide)
+    for _, part in ipairs(character:GetDescendants()) do
+        if part:IsA("BasePart") then
+            part.CanCollide = canCollide
+        end
+    end
+end
+
+-- Função de callback para o botão de alternância de Noclip
+local function onNoclipToggle(value)
+    noclipEnabled = value
+    print("Noclip Enabled:", noclipEnabled)
+    
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+
+    if noclipEnabled then
+        -- Inicia um loop para continuamente definir CanCollide
+        noclipLoop = runService.Stepped:Connect(function()
+            if character then
+                setCharacterCanCollide(character, false)
+            end
+        end)
+    else
+        -- Desativa o loop e restaura CanCollide
+        if noclipLoop then
+            noclipLoop:Disconnect()
+        end
+        if character then
+            setCharacterCanCollide(character, true)
+        end
+    end
+end
+
+-- Adiciona o botão de alternância "Noclip"
+local Toggle = AddToggle(Main, {
+    Name = "✨شيل الطرد✨",
+    Default = false,
+    Callback = onNoclipToggle
+})
+
 AddButton(Main, {
   Name = "  	✨فتح وقفل كراج ✨",
   Callback = function()
@@ -2416,72 +2469,6 @@ local function onInfiniteJumpToggle(value)
     end
 end
 
--- Adiciona o botão de alternância "Infinitejump"
-local Toggle = AddToggle(Main, {
-    Name = "✨قفز لا نهائي✨",
-    Default = false,
-    Callback = onInfiniteJumpToggle
-})
-function MakeNotifi(notification)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = notification.Title;
-        Text = notification.Text;
-        Duration = notification.Time;
-    })
-end
-
--- Variáveis e funções para a visualização dos jogadores
-local viewEnabled = false
-local selectedViewPlayer = nil
-local characterAddedConnection = nil
-
-local function toggleView(enabled)
-    if enabled then
-        if selectedViewPlayer then
-            local player = selectedViewPlayer
-            if player then
-                game.Workspace.CurrentCamera.CameraSubject = player.Character
-                if characterAddedConnection then
-                    characterAddedConnection:Disconnect()
-                end
-                characterAddedConnection = player.CharacterAdded:Connect(function(character)
-                    game.Workspace.CurrentCamera.CameraSubject = character
-                end)
-                MakeNotifi({
-                    Title = "Visualizando " .. player.Name,
-                    Text = "Você está visualizando o jogador: " .. player.Name,
-                    Time = 6
-                })
-            else
-                print("Jogador não encontrado.")
-                viewEnabled = false
-            end
-        else
-            print("Nenhum jogador selecionado para a visualização.")
-            viewEnabled = false
-        end
-    else
-        if characterAddedConnection then
-            characterAddedConnection:Disconnect()
-            characterAddedConnection = nil
-        end
-        game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
-    end
-end
-
-local value = "" -- Variável para armazenar o nome digitado
-
-local function findPlayerByPartialNameOrNickname(partialName)
-    value = partialName -- Atualiza a variável com o nome digitado completo
-    for _, player in ipairs(game.Players:GetPlayers()) do
-        if player.Name:lower():find(partialName:lower(), 1, true) or (player.DisplayName and player.DisplayName:lower():find(partialName:lower(), 1, true)) then
-            return player
-        end
-    end
-    return nil
-end
-
--- Adicionando a caixa de texto para entrada do nome ou apelido do jogador
 AddTextBox(Main, {
     Name = "✨ادخل اول ثلاث حروف من اسم الاعب✨",
     Default = "",
@@ -2557,51 +2544,6 @@ local function maintainView()
     end
 end
 
-local section = AddSection(Main, {"✨ازالة الحضر من البيت✨"})
-local noclipEnabled = false
-local runService = game:GetService("RunService")
-
--- Função para definir CanCollide para todas as partes do personagem
-local function setCharacterCanCollide(character, canCollide)
-    for _, part in ipairs(character:GetDescendants()) do
-        if part:IsA("BasePart") then
-            part.CanCollide = canCollide
-        end
-    end
-end
-
--- Função de callback para o botão de alternância de Noclip
-local function onNoclipToggle(value)
-    noclipEnabled = value
-    print("Noclip Enabled:", noclipEnabled)
-    
-    local player = game.Players.LocalPlayer
-    local character = player.Character
-
-    if noclipEnabled then
-        -- Inicia um loop para continuamente definir CanCollide
-        noclipLoop = runService.Stepped:Connect(function()
-            if character then
-                setCharacterCanCollide(character, false)
-            end
-        end)
-    else
-        -- Desativa o loop e restaura CanCollide
-        if noclipLoop then
-            noclipLoop:Disconnect()
-        end
-        if character then
-            setCharacterCanCollide(character, true)
-        end
-    end
-end
-
--- Adiciona o botão de alternância "Noclip"
-local Toggle = AddToggle(Main, {
-    Name = "✨شيل الطرد✨",
-    Default = false,
-    Callback = onNoclipToggle
-})
 AddButton(Main, {
   Name = "✨اختفاء اللاعب✨",
   Callback = function()
@@ -2662,126 +2604,6 @@ local function onNoclipToggle(value)
     end
 end
 
--- Adiciona o botão de alternância "Noclip"
-local Toggle = AddToggle(Main, {
-    Name = "✨اخترق الجدار✨",
-    Default = false,
-    Callback = onNoclipToggle
-})
-
-AddButton(Main, {
-  Name = "✨الطيران✨",
-  Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/SNdSmJJk"))()
-  end
-})
-AddButton(Main, {
-  Name = "✨مؤشر الفريمات✨",
-  Callback = function()
-    -- FPS and Ping Checker Script (Improved UI with Movable Frame)
-
--- Create a ScreenGui to display FPS and Ping
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "PerformanceGui"
-ScreenGui.ResetOnSpawn = false -- Keep the UI persistent across respawns
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
--- Frame for FPS and Ping display
-local displayFrame = Instance.new("Frame")
-displayFrame.Size = UDim2.new(0, 250, 0, 100)
-displayFrame.Position = UDim2.new(0, 10, 0, 10)
-displayFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-displayFrame.BackgroundTransparency = 0.4
-displayFrame.BorderSizePixel = 0
-displayFrame.Active = true -- Make the frame active for input events
-displayFrame.Draggable = true -- Enable draggable frame
-displayFrame.Parent = ScreenGui
-
--- FPS Label
-local fpsLabel = Instance.new("TextLabel")
-fpsLabel.Size = UDim2.new(1, -20, 0, 40)
-fpsLabel.Position = UDim2.new(0, 10, 0, 10)
-fpsLabel.TextColor3 = Color3.new(1, 1, 1)
-fpsLabel.TextStrokeTransparency = 0.7
-fpsLabel.TextSize = 24
-fpsLabel.Font = Enum.Font.SourceSansBold
-fpsLabel.TextXAlignment = Enum.TextXAlignment.Left
-fpsLabel.BackgroundTransparency = 1
-fpsLabel.Text = "FPS: Loading..."
-fpsLabel.Parent = displayFrame
-
--- Ping Label
-local pingLabel = Instance.new("TextLabel")
-pingLabel.Size = UDim2.new(1, -20, 0, 40)
-pingLabel.Position = UDim2.new(0, 10, 0, 50)
-pingLabel.TextColor3 = Color3.new(1, 1, 1)
-pingLabel.TextStrokeTransparency = 0.7
-pingLabel.TextSize = 24
-pingLabel.Font = Enum.Font.SourceSansBold
-pingLabel.TextXAlignment = Enum.TextXAlignment.Left
-pingLabel.BackgroundTransparency = 1
-pingLabel.Text = "Ping: Loading..."
-pingLabel.Parent = displayFrame
-
--- FPS Checker
-local fps = 0
-local lastTime = tick()
-
-game:GetService("RunService").RenderStepped:Connect(function()
-    fps = math.floor(1 / (tick() - lastTime))
-    lastTime = tick()
-    fpsLabel.Text = "FPS: " .. tostring(fps)
-end)
-
--- Ping Checker
-local function getPing()
-    local player = game.Players.LocalPlayer
-    local ping = player:GetNetworkPing() * 1000 -- Convert to milliseconds
-    return math.floor(ping)
-end
-
-game:GetService("RunService").Stepped:Connect(function()
-    local ping = getPing()
-    pingLabel.Text = "Ping: " .. tostring(ping) .. " ms"
-end)
-
--- Optional: Auto-adjust label colors based on performance
-game:GetService("RunService").Stepped:Connect(function()
-    if fps < 30 then
-        fpsLabel.TextColor3 = Color3.new(1, 0, 0) -- Red for low FPS
-    else
-        fpsLabel.TextColor3 = Color3.new(0, 1, 0) -- Green for good FPS
-    end
-
-    if getPing() > 200 then
-        pingLabel.TextColor3 = Color3.new(1, 0, 0) -- Red for high ping
-    else
-        pingLabel.TextColor3 = Color3.new(0, 1, 0) -- Green for good ping
-    end
-end)
-
--- Optional: Saving frame position locally
-local function savePosition()
-    local pos = displayFrame.Position
-    -- Save the position to a datastore or local storage (optional implementation)
-end
-
--- Saving the position when dragging stops
-displayFrame.MouseLeave:Connect(savePosition)
-displayFrame.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        savePosition()
-    end
-end)
-loadstring(game:HttpGet("https://pastebin.com/raw/KiSYpej6",true))()
-  end
-})
-AddButton(Main, {
-  Name = "✨قفل✨",
-  Callback = function()
-    loadstring(game:HttpGet(('https://pastebin.com/raw/KfCHrgXh'),true))()
-  end
-})
 local Paragraph = AddParagraph(Main, {"مفيد | useful", "مفيد جداً"})
 AddButton(Main, {
   Name = "✨اعادة دخول الى سيرفر✨",
@@ -2806,12 +2628,6 @@ AddButton(Main, {
   Name = "✨اقتل نفسك✨",
   Callback = function()
     game.Players.LocalPlayer.Character.Humanoid.Health = 0
-  end
-})
-AddButton(Main, {
-  Name = "✨ازالة لاق✨",
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
   end
 })
 
