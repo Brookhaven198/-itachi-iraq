@@ -2794,29 +2794,6 @@ AddButton(Main, {
     [1] = "ClearAllTools"
 }
 
-AddButton(Main, {
-  Name = "😂-تـنزع ملابسك-😂",
-  Callback = function()
-
-local args = {
-    [1] = "wear",
-    [2] = 2248242028
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-wait(0.1)
-
-local args = {
-    [1] = "wear",
-    [2] = 2547392639
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-  end
-})
-
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
   end
 })
