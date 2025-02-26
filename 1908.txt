@@ -70,6 +70,14 @@ AddButton(Main, {
 
 local Main = MakeTab({Name = "✨Brookhaven✨"})
 AddButton(Main, {
+  Name = "✨سكربت Astro hub✨",
+  Callback = function()
+    loadstring(game:HttpGet("https://qu.ax/cBtZP.txt"))() 
+  end
+})
+
+local Main = MakeTab({Name = "✨Brookhaven✨"})
+AddButton(Main, {
   Name = "✨سكربت جودة✨",
   Callback = function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Rtx-graphics-25102"))()
@@ -706,6 +714,9 @@ AddButton(Main, {
     local args = {
     [1] = "wearWalkStyle",
     [2] = 15294026484,
+    [3] = 15848163279,
+    [4] = 16127830905,,
+    [5] = 15535076528,
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
