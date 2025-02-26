@@ -21,7 +21,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
 wait(0.1)
 local args = {
     [1] = "RolePlayBio",
-    [2] = "\240\159\145\190 سكربـت المطـور  ITACHI  \240\159\145\190"}
+    [2] = "✨ سكربـت المطـور ITACHI✨"}
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
 wait(0.5)
@@ -1986,7 +1986,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "اسـرا"
+    [2] = "اسـراء"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2069,7 +2069,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "يــوهـان"
+    [2] = "يَـوهـان"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
