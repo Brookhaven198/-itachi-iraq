@@ -1947,35 +1947,11 @@ local Main = MakeTab({Name = "✨الاسماء✨"})
 local section = AddSection(Main, {"✨اسماء بنات✨ "})
 
 AddButton(Main, {
-  Name = "شمس",
+  Name = "Noor",
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "شـمـس"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
-  end
-})
-
-AddButton(Main, {
-  Name = "نٌـوَرَ",
-  Callback = function()
-    local args = {
-    [1] = "RolePlayName",
-    [2] = "نٌـوَرَ"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
-  end
-})
-
-AddButton(Main, {
-  Name = "اسراء",
-  Callback = function()
-    local args = {
-    [1] = "RolePlayName",
-    [2] = "اسـرا"
+    [2] = "NOOR"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2006,20 +1982,29 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
 
 
 AddButton(Main, {
-  Name = "فََاَطْـمَِـهْ",
+  Name = "Money",
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "فََاَطْـمَِـهْ"
+    [2] = "Money"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
   end
 })
-
-local section = AddSection(Main, {"✨اسماء اولاد✨ "})
 AddButton(Main, {
-  Name = "ايـفـل",
+  Name = "Hacker",
+  Callback = function()
+    local args = {
+    [1] = "RolePlayName",
+    [2] = "H‌ ‌ ‌‌‌a‌‌‌‌‌‌‌‌‌‌‌‌c‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌k‌‌‌‌‌‌‌‌‌‌‌‌‌e‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ṛ‌‌‌‌‌"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+  end
+})
+AddButton(Main, {
+  Name = "Evil",
   Callback = function()
     local args = {
     [1] = "RolePlayName",
@@ -2031,34 +2016,35 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
 })
 
 AddButton(Main, {
-  Name = "عـلـي",
+  Name = "اسم $",
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "عََُّـلَُـيٌ"
+    [2] = "$\204\184\204\143\204\130\204\145\204\130\205\128\204\144\204\148\205\129\205\151\205\134\204\140\204\147\205\132\204\145\204\129\205\131\204\133\204\133\204\144\205\146\204\174\204\166\204\177\204\152\205\148\205\133\204\151\204\172\204\164\204\177\204\152\205\135\205\150\204\150\205\136\204\153\205\141\204\153\205\133\205\136\204\152\204\171\204\153"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+wait(0.1)
+  end
+})
+
+AddButton(Main, {
+  Name = "Ali",
+  Callback = function()
+    local args = {
+    [1] = "RolePlayName",
+    [2] = "Ali"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
   end
 })
 AddButton(Main, {
-  Name = "محمد",
+  Name = "Hunter",
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "مَـحـمٌـد"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
-  end
-})
-
-AddButton(Main, {
-  Name = "يوهان",
-  Callback = function()
-    local args = {
-    [1] = "RolePlayName",
-    [2] = "يــوهـان"
+    [2] = "هنـترٓ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2086,24 +2072,56 @@ AddButton(Main, {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
   end
 })
-
-AddButton(Main, {
-  Name = "عباس",
-  Callback = function()
-    local args = {
-    [1] = "RolePlayName",
-    [2] = "عٌـبـاٌس ~"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
-  end
-})
 AddButton(Main, {
   Name = "اثيرَ",
   Callback = function()
     local args = {
     [1] = "RolePlayName",
     [2] = "اثّيـرَ"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+  end
+})
+AddButton(Main, {
+  Name = "عبسي",
+  Callback = function()
+    local args = {
+    [1] = "RolePlayName",
+    [2] = "عبَـّسيّ ~"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+  end
+})
+AddButton(Main, {
+  Name = "عبدالله",
+  Callback = function()
+    local args = {
+    [1] = "RolePlayName",
+    [2] = "عىٕدَالُلهّ"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+  end
+})
+AddButton(Main, {
+  Name = "يوهان",
+  Callback = function()
+    local args = {
+    [1] = "RolePlayName",
+    [2] = "يوَهـُاّنٓ"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+  end
+})
+AddButton(Main, {
+  Name = "محمد",
+  Callback = function()
+    local args = {
+    [1] = "RolePlayName",
+    [2] = "مَـٓحمًدٓ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
