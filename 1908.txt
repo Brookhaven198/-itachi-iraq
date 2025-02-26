@@ -698,12 +698,17 @@ print("Clicked")local args = {
 [3] = "YinHub"
 }
 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
 local Main = MakeTab({Name = "✨الشعر|ايتم✨ "})
 
 local Paragraph = AddParagraph(Main, {"✨دمج شعر اولاد✨"})
 local Paragraph = AddParagraph(Main, {" ✨دمج شعر اسود✨"})
 AddButton(Main, {
-  Name = "⬛-اضغط لدمج الاسود-⬛",
+  Name = "✨اضغط لدمج الاسود✨",
   Callback = function()
 
 local args = {
@@ -744,7 +749,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 })
 
 AddButton(Main, {
-  Name = "🟫-اضغط لدمج البني-🟫",
+  Name = "✨اضغط لدمج البني✨",
   Callback = function()
 
 local args = {
@@ -785,7 +790,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 })
 
 AddButton(Main, {
-  Name = "⬜-اضغط لدمج الابيض-⬜",
+  Name = "✨اضغط لدمج الابيض✨",
   Callback = function()
 
 local args = {
