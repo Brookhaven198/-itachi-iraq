@@ -139,13 +139,6 @@ AddButton(Main, {
 })
 
 AddButton(Main, {
-  Name = "✨2سكربت اختفاء✨",
-  Callback = function()
-     loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./dbb6ce6f6cee4f7a5c9e20d7b88e83db2a93bf25/Invisible%20GUI'))()
-  end
-})
-
-AddButton(Main, {
   Name = " ✨سكربت طيران كنبة ✨",
   Callback = function()
     loadstring(game:HttpGet('https://pastebin.com/raw/TXMNj1yy'))()
@@ -2017,7 +2010,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
 
 
 AddButton(Main, {
-  Name = "فََاَطْـمَِـهْ",
+  Name = "فََاَطْـمَِـهْ",
   Callback = function()
     local args = {
     [1] = "RolePlayName",
@@ -2046,7 +2039,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "عََُّـلَُـيٌ"
+    [2] = "عََُّـلَُـيٌ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
