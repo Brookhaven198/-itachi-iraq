@@ -155,7 +155,7 @@ AddButton(Main, {
 AddButton(Main, {
   Name = "✨سكربت طيران✨",
   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AshleyCanis/Qq/refs/heads/main/Ashley"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/SNdSmJJk"))()
   end
 })
 
@@ -2503,7 +2503,7 @@ local Toggle = AddToggle(Main, {
 AddButton(Main, {
   Name = "✨الطيران✨",
   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AshleyCanis/Qq/refs/heads/main/Ashley"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/SNdSmJJk"))()
   end
 })
 AddButton(Main, {
@@ -2610,7 +2610,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/KiSYpej6",true))()
 AddButton(Main, {
   Name = "✨قفل✨",
   Callback = function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/gSrbeNsB'))()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/KfCHrgXh'),true))()
   end
 })
 local Paragraph = AddParagraph(Main, {"مفيد | useful", "مفيد جداً"})
