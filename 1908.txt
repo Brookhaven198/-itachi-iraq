@@ -1,40 +1,37 @@
-game.Players.LocalPlayer.Character.Humanoid.Health = 0
 wait(0.1)
 game.StarterGui:SetCore("SendNotification", {
     Title = "جارِ تحميل سكربت ";
-    Text = " سكربت ITACHI  "; -- ARAB TEAM
+    Text = "سكربت آشلي گانيس"; -- ARAB TEAM
     Duration = 5;
 })
+
 wait(0.1)
 game.StarterGui:SetCore("SendNotification", {
-    Title = "✨ثواني يا حلو✨ ";
-    Text = " سكربت ITACHI "; -- ARAB TEAM
+    Title = "لحظه من فضلك";
+    Text = "سكربت آشلي گانيس"; -- ARAB TEAM
+    Duration = 5;
+})
+
+wait(0.1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم البرمجة من قبل آشلي";
+    Text = "تم تفعيل سكربت آشلي"; -- ARAB TEAM
     Duration = 5;
 })
 local args = {
-    [1] = "RolePlayName",
-    [2] = "سكربت المطور ITACHI 😼"
+    [1] = "RolePlayBio",
+    [2] = "👾سكربت المطور آشلي👾"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
 wait(0.1)
-local args = {
-    [1] = "RolePlayBio",
-    [2] = "✨ شكرا لاستخدامك السكربت يا حلو✨😍 "}
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
-wait(0.5)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "شكرا لاستخدامك السكربت يا حلو ✨✨✨";
-    Text = " تم تفعيل سكربت ITACHI  "; -- ARAB TEAM
-    Duration = 5;
-})
 
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/speedwave1/speed_wave/refs/heads/main/Aya")))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Luarmor123/community-Y-HUB/refs/heads/main/Gui")))()
 MakeWindow({
   Hub = {
-    Title = "سكربت  ITACHI HUB",
-    Animation = ITACHI HUB  "
+    Title = "SNAKE HUB | 1.4V",
+    Animation = "SCRPIT ASHLEY CANIS "
   },
   Key = {
     KeySystem = false,
@@ -52,12 +49,12 @@ MakeWindow({
 })
 
 MinimizeButton({
-  Image = "rbxassetid://91851883469698",
+  Image = "rbxassetid://16905163783",
   Size = {40, 40},
-  Color = Color3.fromRGB(10, 10, 10),
+  Color = Color3.fromRGB(15, 15, 15),
   Corner = true,
   Stroke = true,
-  StrokeColor = Color3.fromRGB(10, 10, 10)
+  StrokeColor = Color3.fromRGB(255, 0, 0)
 })
 
 
