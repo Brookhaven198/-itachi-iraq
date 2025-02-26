@@ -60,8 +60,6 @@ MinimizeButton({
   Stroke = true,
   StrokeColor = Color3.fromRGB(10, 10, 10)
 })
-
-
 local Main = MakeTab({Name = "👤الحقوق👤"})
 local Image = AddImageLabel(Main, {
   Name = "ITACHI  KING ",
