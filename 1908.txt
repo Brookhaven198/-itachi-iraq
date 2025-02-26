@@ -53,7 +53,7 @@ MakeWindow({
 })
 
 MinimizeButton({
-  Image = "rbxassetid:///115363213797505",
+  Image = "rbxassetid:///115714662895227",
   Size = {40, 40},
   Color = Color3.fromRGB(10, 10, 10),
   Corner = true,
@@ -110,19 +110,18 @@ AddButton(Main, {
   end
 })
 
-local Button = MainTab:CreateButton({
-   Name = "سكربت قتل وسحب",
-   Callback = function()
-         loadstring(game:HttpGet('https://raw.githubusercontent.com/SnoobG/Lua-Script-s/refs/heads/main/BrookHaven%20TvonHub'))()
-   end,
+AddButton(Main, {
+  Name = "✨سكربت جل😐✨",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
+  end
 })
- 
- 
-local Button = MainTab:CreateButton({
-   Name = "سكربت ج😉",
-   Callback = function()
-         loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
-   end,
+
+AddButton(Main, {
+  Name = "✨سكربت قتل وسحب✨",
+  Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SnoobG/Lua-Script-s/refs/heads/main/BrookHaven%20TvonHub'))()
+  end
 })
 
 AddButton(Main, {
