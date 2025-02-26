@@ -351,7 +351,7 @@ local Main = MakeTab({Name = "✨الاجسام✨"})
 local Paragraph = AddParagraph(Main, {"✨اجسام بنات✨ "})
 
 AddButton(Main, {
-  Name = "✨جسم ايمو بنت✨",
+  Name = "✨جسم بنت ايمو✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -372,7 +372,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 
 AddButton(Main, {
-  Name = "✨جسم بنت ايمو ✨",
+  Name = "✨جسم بنت خصر ضعيف ✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -392,27 +392,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "✨جسم بنت✨",
-  Callback = function()
-print("Clicked")local args = {
-[1] = "CharacterChange",
-[2] = {
-[1] = 124754866635882,
-[2] = 76683091425509,
-[3] = 75159926897589,
-[4] = 1,
-[5] = 1,
-[6] = 1
-},
-[3] = "YinHub"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-
-  end
-})
-AddButton(Main, {
-  Name = "✨جسم بنت ✨",
+  Name = "✨جسم بنت  ✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -433,49 +413,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 
 AddButton(Main, {
-  Name = "✨جسم بنت✨",
-  Callback = function()
-print("Clicked")local args = {
-[1] = "CharacterChange",
-[2] = {
-[1] = 101577365085156,
-[2] = 121017849910260,
-[3] = 111571034664628,
-[4] = 1,
-[5] = 1,
-[6] = 1
-},
-[3] = "YinHub"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-
-  end
-})
-
-AddButton(Main, {
-  Name = "✨جسم بنت✨",
-  Callback = function()
-print("Clicked")local args = {
-[1] = "CharacterChange",
-[2] = {
-[1] = 18839824113,
-[2] = 18839824209,
-[3] = 18839824132,
-[4] = 1,
-[5] = 1,
-[6] = 1
-},
-[3] = "YinHub"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-
-  end
-})
-
-AddButton(Main, {
-  Name = "✨جسم بنت ✨",
+  Name = "✨جسم بنت الدلوعه ✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -496,7 +434,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 
 AddButton(Main, {
-  Name = "✨جسم بنت ✨",
+  Name = "✨جسم بنت يد صغيره ✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
@@ -517,7 +455,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 })
 
 AddButton(Main, {
-  Name = "✨جسم بنت✨",
+  Name = "✨جسم بنت صغير✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
