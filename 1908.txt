@@ -53,19 +53,19 @@ MakeWindow({
 })
 
 MinimizeButton({
-  Image = "rbxassetid://111989185212309",
+  Image = "rbxassetid://91851883469698",
   Size = {40, 40},
-  Color = Color3.fromRGB(5, 5, 5),
+  Color = Color3.fromRGB(10, 10, 10),
   Corner = true,
   Stroke = true,
-  StrokeColor = Color3.fromRGB(5, 5, 5)
+  StrokeColor = Color3.fromRGB(10, 10, 10)
 })
 
 
 local Main = MakeTab({Name = "👤الحقوق👤"})
 local Image = AddImageLabel(Main, {
   Name = "Iachi King ",
-  Image = "rbxassetid://111989185212309"
+  Image = "rbxassetid://132581937835303"
 })
 local Paragraph = AddParagraph(Main, {"✨حساباتي لل توصل معي لو تبون اي شي اصيفه لل سكربت✨ ", "bom dia meus manos"})
 AddButton(Main, {
@@ -1253,7 +1253,7 @@ AddButton(Main, {
     Description = "Teleporta para as coordenadas da Montanha 1",
     Callback = teleportToMountain1
 })
-local Main = MakeTab({Name = " الاغاني "})
+local Main = MakeTab({Name = " ✨الاغاني✨"})
 local section = AddSection(Main, {"✨ادخل كود الاغنية✨"})
  
 AddTextBox(Main, {
