@@ -755,6 +755,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
   end
 })
 
+local Paragraph = AddParagraph(Main, {" ✨دمج شعر البني✨"})
 AddButton(Main, {
   Name = "✨اضغط لدمج البني✨",
   Callback = function()
@@ -796,6 +797,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
   end
 })
 
+local Paragraph = AddParagraph(Main, {" ✨دمج شعر الابيض✨"})
 AddButton(Main, {
   Name = "✨اضغط لدمج الابيض✨",
   Callback = function()
@@ -1425,9 +1427,7 @@ AddButton(Main, {
 })
 
 local Main = MakeTab({Name = "✨السيارة✨ "})
-local section = AddSection(Main, {"✨خصائص السيارة✨ "})
-local section = AddSection(Main, {"✨ادخل كود الاغنية✨"})
- 
+local Paragraph = AddParagraph(Main, {" ✨ادخل كود الاغنية✨"})
 
 AddTextBox(Main, {
   Name = "ادخل كود الاغنية",
@@ -1449,6 +1449,8 @@ local args1 = {
         
 end 
 })
+
+local Paragraph = AddParagraph(Main, {" ✨خصائص السيارة✨"})
 
 AddButton(Main, {
   Name = "  	✨نار في سياره✨ ",
@@ -2438,67 +2440,6 @@ local function maintainView()
             if player and game.Workspace.CurrentCamera.CameraSubject ~= player.Character then
                 game.Workspace.CurrentCamera.CameraSubject = player.Character
             end
-        end
-    end
-end
-
-AddButton(Main, {
-  Name = "✨اختفاء اللاعب✨",
-  Callback = function()
-    local args = {
-    [1] = "CharacterSizeUp",
-    [2] = 6
-}
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
-  end
-})
-
-AddButton(Main, {
-  Name = "✨إلغاء اختفاء✨",
-  Callback = function()
-    local args = {
-    [1] = "CharacterSizeUp",
-    [2] = 1
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
-  end
-})
--- Variável para controlar o estado do Noclip
-local noclipEnabled = false
-local runService = game:GetService("RunService")
-
--- Função para definir CanCollide para todas as partes do personagem
-local function setCharacterCanCollide(character, canCollide)
-    for _, part in ipairs(character:GetDescendants()) do
-        if part:IsA("BasePart") then
-            part.CanCollide = canCollide
-        end
-    end
-end
-
--- Função de callback para o botão de alternância de Noclip
-local function onNoclipToggle(value)
-    noclipEnabled = value
-    print("Noclip Enabled:", noclipEnabled)
-    
-    local player = game.Players.LocalPlayer
-    local character = player.Character
-
-    if noclipEnabled then
-        -- Inicia um loop para continuamente definir CanCollide
-        noclipLoop = runService.Stepped:Connect(function()
-            if character then
-                setCharacterCanCollide(character, false)
-            end
-        end)
-    else
-        -- Desativa o loop e restaura CanCollide
-        if noclipLoop then
-            noclipLoop:Disconnect()
-        end
-        if character then
-            setCharacterCanCollide(character, true)
         end
     end
 end
