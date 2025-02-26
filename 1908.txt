@@ -837,108 +837,6 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
   end
 })
 
-local Paragraph = AddParagraph(Main, {"✨قسم اشياء بالايد✨"})
-
-AddButton(Main, {
-  Name = "✨مشروب monster ابيض✨",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 134120315011243,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = "✨كشاف ضوء✨",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 18679213803,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = "✨مشروب monster وردي✨",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 90674886498829,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = " ✨فأس اسود✨",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 116536998067259,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = "✨بخاخ اسود✨ ",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 86792218369662,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = "✨ بخاخ ابيض✨",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 72392852231467,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = "✨جوال✨",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 107670184356291,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = "✨فلوس✨",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 18444236012,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-AddButton(Main, {
-  Name = "✨مكان سلاح اسود✨",
-  Callback = function()
-    local args = {
-    [1] = "wearWalkStyle",
-    [2] = 106821784389137,
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-end
-})
-
 local Main = MakeTab({Name = " ✨الاغاني✨"})
 local section = AddSection(Main, {"✨ادخل كود الاغنية✨"})
  
@@ -2554,6 +2452,7 @@ AddButton(Main, {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
   end
 })
+
 AddButton(Main, {
   Name = "✨إلغاء اختفاء✨",
   Callback = function()
@@ -2614,6 +2513,7 @@ AddButton(Main, {
     print('Hello!')
   end
 })
+
 AddButton(Main, {
   Name = "✨احذف جميع الأشياء الي في ايدك✨",
   Callback = function()
