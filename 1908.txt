@@ -697,7 +697,6 @@ print("Clicked")local args = {
 },
 [3] = "YinHub"
 }
-
 local Main = MakeTab({Name = "✨السكن✨ "})
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
