@@ -1535,6 +1535,29 @@ AddButton(Main, {
 
 local Main = MakeTab({Name = "✨السيارة✨ "})
 local section = AddSection(Main, {"✨خصائص السيارة✨ "})
+local section = AddSection(Main, {"✨ادخل كود الاغنية✨"})
+ 
+
+AddTextBox(Main, {
+  Name = "ادخل كود الاغنية",
+  Default = "",
+  PlaceholderText = "ادخل الاغنيه سيارة ",
+  ClearText = true,
+  Callback = function(Value)
+local args1 = {
+            [1] = "SkateBoard"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1NoMoto1rVehicle1s"):FireServer(unpack(args1))
+ 
+        -- Replacing the static value with the input from the textbox
+        local args2 = {
+            [1] = "PickingScooterMusicText",
+            [2] = Value -- Here, we use the textbox value to replace 35935204
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1NoMoto1rVehicle1s"):FireServer(unpack(args2))
+        
+end 
+})
 
 AddButton(Main, {
   Name = "  	✨نار في سياره✨ ",
