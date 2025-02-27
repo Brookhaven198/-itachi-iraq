@@ -710,6 +710,37 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 
+local Main = MakeTab({Name = "✨السكن✨"})
+local Paragraph = AddParagraph(Main, {"✨سكن اولاد✨ "})
+AddButton(Main, {
+  Name = "✨سكن غوجو✨",
+  Callback = function()
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 91078281931212
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 13643719348
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 14549791515
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
 local Main = MakeTab({Name = "✨الشعر|ايتم✨ "})
 
 local Paragraph = AddParagraph(Main, {"✨دمج شعر اولاد✨"})
