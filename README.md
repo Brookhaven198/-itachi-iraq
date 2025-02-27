@@ -50,7 +50,7 @@ end
 
 local function ChangeToggleColor(Button)
 	led = Button.Ticket_Asset
-	if led.ImageColor3 == Color3.fromRGB(255, 0, 0) then
+	if led.ImageColor3 == Color3.fromRGB(250, 0, 0) then
 		led.ImageColor3 = Color3.fromRGB(0, 255, 0)
 	else
 		led.ImageColor3 = Color3.fromRGB(255, 0, 0)
@@ -1151,7 +1151,7 @@ ClickTargetTool_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ClickTargetTool_Button.BorderSizePixel = 0
 ClickTargetTool_Button.Position = UDim2.new(0, 180, 0, 0)
 ClickTargetTool_Button.Size = UDim2.new(0, 30, 0, 30)
-ClickTargetTool_Button.Image = "rbxassetid://18393252027"
+ClickTargetTool_Button.Image = "rbxassetid://132581937835303"
 
 UserIDTargetLabel.Name = "UserIDTargetLabel"
 UserIDTargetLabel.Parent = Target_Section
