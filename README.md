@@ -51,9 +51,9 @@ end
 local function ChangeToggleColor(Button)
 	led = Button.Ticket_Asset
 	if led.ImageColor3 == Color3.fromRGB(250, 0, 0) then
-		led.ImageColor3 = Color3.fromRGB(0, 255, 0)
+		led.ImageColor3 = Color3.fromRGB(250, 0, 0)
 	else
-		led.ImageColor3 = Color3.fromRGB(255, 0, 0)
+		led.ImageColor3 = Color3.fromRGB(250, 0, 0)
 	end
 end
 
@@ -395,7 +395,7 @@ Background.BorderColor3 = Color3.fromRGB(0, 255, 255)
 Background.Position = UDim2.new(0.5, 0, 0.5, 0)
 Background.Size = UDim2.new(0, 500, 0, 350)
 Background.ZIndex = 9
-Background.Image = "rbxassetid://18393252027"
+Background.Image = "rbxassetid://132581937835303"
 Background.ImageColor3 = Color3.fromRGB(0, 255, 255)
 Background.ImageTransparency = 0.600
 Background.ScaleType = Enum.ScaleType.Tile
@@ -1126,7 +1126,7 @@ TargetImage.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 TargetImage.BorderColor3 = Color3.fromRGB(0, 255, 255)
 TargetImage.Position = UDim2.new(0, 25, 0, 25)
 TargetImage.Size = UDim2.new(0, 100, 0, 100)
-TargetImage.Image = "rbxassetid://18393252027"
+TargetImage.Image = "rbxassetid://132581937835303"
 
 TargetName_Input.Name = "TargetName_Input"
 TargetName_Input.Parent = Target_Section
