@@ -3063,20 +3063,6 @@ local function onInfiniteJumpToggle(value)
     end
 end
 
--- Adiciona o botão de alternância "Infinitejump"
-local Toggle = AddToggle(Main, {
-    Name = "قفز لا نهائي | Inf Jump",
-    Default = false,
-    Callback = onInfiniteJumpToggle
-})
-function MakeNotifi(notification)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = notification.Title;
-        Text = notification.Text;
-        Duration = notification.Time;
-    })
-end
-
 -- Variáveis e funções para a visualização dos jogadores
 local viewEnabled = false
 local selectedViewPlayer = nil
@@ -3243,12 +3229,6 @@ local function onNoclipToggle(value)
     end
 end
 
--- Adiciona o botão de alternância "Noclip"
-local Toggle = AddToggle(Main, {
-    Name = "شيل الطرد",
-    Default = false,
-    Callback = onNoclipToggle
-})
 AddButton(Main, {
   Name = "اختفاء اللاعب",
   Callback = function()
@@ -3423,12 +3403,7 @@ end)
 loadstring(game:HttpGet("https://pastebin.com/raw/KiSYpej6",true))()
   end
 })
-AddButton(Main, {
-  Name = " lock | قفل",
-  Callback = function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/gSrbeNsB'))()
-  end
-})
+
 local Paragraph = AddParagraph(Main, {"مفيد | useful", "مفيد جداً"})
 AddButton(Main, {
   Name = "Rejoin | اعادة دخول الى سيرفر",
@@ -3437,50 +3412,5 @@ AddButton(Main, {
 				local p = game:GetService("Players").LocalPlayer
 				ts:Teleport(game.PlaceId, p)
     print('Hello!')
-  end
-})
-AddButton(Main, {
-  Name = "احذف جميع الأشياء الي في ايدك",
-  Callback = function()
-    local args = {
-    [1] = "ClearAllTools"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
-  end
-})
-AddButton(Main, {
-  Name = "اقتل نفسك",
-  Callback = function()
-    game.Players.LocalPlayer.Character.Humanoid.Health = 0
-  end
-})
-AddButton(Main, {
-  Name = "ازالة لاق • Destroy Lag",
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
-  end
-})
-
-local Paragraph = AddParagraph(Main, {" سكربتات حمايـة فقط وقتل "})
-
-AddButton(Main, {
-  Name = "سـكـربـت يـقـتـل الـنـاس ب كـنـبـه ",
-  Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
-  end
-})
-
-AddButton(Main, {
-  Name = "سكربـت يطير اي احد يفعل علـيك",
-  Callback = function()
-loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FE-Fling-GUI-10927"))()
-  end
-})
-
-AddButton(Main, {
-  Name = "سكربـت محد يقدر يطيركـك ",
-  Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))() 
   end
 })
