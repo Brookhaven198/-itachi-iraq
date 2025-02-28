@@ -1,22 +1,3 @@
--- by Fsploit
--- revamped
--- powered by Ashley Canis
--- arg
-
-local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/VisualRoblox/Roblox/main/UI-Libraries/Visual%20Command%20UI%20Library/Source.lua', true))()
-
-local Window = Library:CreateWindow({
-    Name = 'صنع ب تطوير عراقي من قبل آشلي',
-    IntroText = 'سكربـت آشلي گانيس | Snake Hub Brookhaven 🏡',
-    IntroIcon = 'rbxassetid://16905163783',
-    IntroBlur = true,
-    IntroBlurIntensity = 15,
-    Theme = Library.Themes.dark,
-    Position = 'bottom',
-    Draggable = true,
-    Prefix = ';'
-})
-
 
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
 wait(0.1)
