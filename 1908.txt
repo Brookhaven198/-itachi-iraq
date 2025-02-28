@@ -2121,6 +2121,114 @@ AddButton(Main, {
 })
 
 local Main = MakeTab({Name = "✨السيارة✨ "})
+
+-- Adicionando a caixa de texto para entrada do nome ou apelido do jogador
+AddTextBox(Main, {
+    Name = " دخل اول ثلاث أحرف من اسم اللاعب",
+    Default = "",
+    PlaceholderText = "دخل اسم اللاعب",
+    ClearText = true,
+    Callback = function(value)
+        if value == "" then
+            MakeNotifi({
+                Title = "Erro",
+                Text = "Nome do jogador não foi digitado.",
+                Time = 5
+            })
+            if viewEnabled then
+                toggleView(false)
+            end
+            return
+        end
+
+        selectedViewPlayer = findPlayerByPartialNameOrNickname(value)
+        if selectedViewPlayer then
+            print("Jogador encontrado: " .. selectedViewPlayer.Name)
+            if viewEnabled then
+                toggleView(false)
+                toggleView(true)
+            end
+        else
+            MakeNotifi({
+                Title = "Erro",
+                Text = "Nenhum jogador encontrado com esse nome ou apelido.",
+                Time = 7
+            })
+            if viewEnabled then
+                toggleView(false)
+            end
+        end
+    end
+})
+
+AddButton(Main, {
+  Name = "اختفاء اللاعب",
+  Callback = function()
+    local args = {
+    [1] = "CharacterSizeUp",
+    [2] = 6
+}
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+  end
+})
+AddButton(Main, {
+  Name = "إلغاء اختفاء",
+  Callback = function()
+    local args = {
+    [1] = "CharacterSizeUp",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+  end
+})
+-- Variável para controlar o estado do Noclip
+local noclipEnabled = false
+local runService = game:GetService("RunService")
+
+-- Função para definir CanCollide para todas as partes do personagem
+local function setCharacterCanCollide(character, canCollide)
+    for _, part in ipairs(character:GetDescendants()) do
+        if part:IsA("BasePart") then
+            part.CanCollide = canCollide
+        end
+    end
+end
+
+-- Função de callback para o botão de alternância de Noclip
+local function onNoclipToggle(value)
+    noclipEnabled = value
+    print("Noclip Enabled:", noclipEnabled)
+    
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+
+    if noclipEnabled then
+        -- Inicia um loop para continuamente definir CanCollide
+        noclipLoop = runService.Stepped:Connect(function()
+            if character then
+                setCharacterCanCollide(character, false)
+            end
+        end)
+    else
+        -- Desativa o loop e restaura CanCollide
+        if noclipLoop then
+            noclipLoop:Disconnect()
+        end
+        if character then
+            setCharacterCanCollide(character, true)
+        end
+    end
+end
+
+-- Adiciona o botão de alternância "Noclip"
+local Toggle = AddToggle(Main, {
+    Name = " اخترق الجدار",
+    Default = false,
+    Callback = onNoclipToggle
+})
+
+local Main = MakeTab({Name = "✨السيارة✨ "})
 local Paragraph = AddParagraph(Main, {" ✨ادخل كود الاغنية✨"})
 
 AddTextBox(Main, {
@@ -3190,221 +3298,6 @@ local function maintainView()
     end
 end
 
-local section = AddSection(Main, {"اذا احد طردك تقدر تؤخر الطرد"})
-local noclipEnabled = false
-local runService = game:GetService("RunService")
-
--- Função para definir CanCollide para todas as partes do personagem
-local function setCharacterCanCollide(character, canCollide)
-    for _, part in ipairs(character:GetDescendants()) do
-        if part:IsA("BasePart") then
-            part.CanCollide = canCollide
-        end
-    end
-end
-
--- Função de callback para o botão de alternância de Noclip
-local function onNoclipToggle(value)
-    noclipEnabled = value
-    print("Noclip Enabled:", noclipEnabled)
-    
-    local player = game.Players.LocalPlayer
-    local character = player.Character
-
-    if noclipEnabled then
-        -- Inicia um loop para continuamente definir CanCollide
-        noclipLoop = runService.Stepped:Connect(function()
-            if character then
-                setCharacterCanCollide(character, false)
-            end
-        end)
-    else
-        -- Desativa o loop e restaura CanCollide
-        if noclipLoop then
-            noclipLoop:Disconnect()
-        end
-        if character then
-            setCharacterCanCollide(character, true)
-        end
-    end
-end
-
-AddButton(Main, {
-  Name = "اختفاء اللاعب",
-  Callback = function()
-    local args = {
-    [1] = "CharacterSizeUp",
-    [2] = 6
-}
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
-  end
-})
-AddButton(Main, {
-  Name = "إلغاء اختفاء",
-  Callback = function()
-    local args = {
-    [1] = "CharacterSizeUp",
-    [2] = 1
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
-  end
-})
--- Variável para controlar o estado do Noclip
-local noclipEnabled = false
-local runService = game:GetService("RunService")
-
--- Função para definir CanCollide para todas as partes do personagem
-local function setCharacterCanCollide(character, canCollide)
-    for _, part in ipairs(character:GetDescendants()) do
-        if part:IsA("BasePart") then
-            part.CanCollide = canCollide
-        end
-    end
-end
-
--- Função de callback para o botão de alternância de Noclip
-local function onNoclipToggle(value)
-    noclipEnabled = value
-    print("Noclip Enabled:", noclipEnabled)
-    
-    local player = game.Players.LocalPlayer
-    local character = player.Character
-
-    if noclipEnabled then
-        -- Inicia um loop para continuamente definir CanCollide
-        noclipLoop = runService.Stepped:Connect(function()
-            if character then
-                setCharacterCanCollide(character, false)
-            end
-        end)
-    else
-        -- Desativa o loop e restaura CanCollide
-        if noclipLoop then
-            noclipLoop:Disconnect()
-        end
-        if character then
-            setCharacterCanCollide(character, true)
-        end
-    end
-end
-
--- Adiciona o botão de alternância "Noclip"
-local Toggle = AddToggle(Main, {
-    Name = " اخترق الجدار",
-    Default = false,
-    Callback = onNoclipToggle
-})
-
-AddButton(Main, {
-  Name = "Fly | الطيران",
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AshleyCanis/Qq/refs/heads/main/Ashley"))()
-  end
-})
-AddButton(Main, {
-  Name = "فريمات | Fps",
-  Callback = function()
-    -- FPS and Ping Checker Script (Improved UI with Movable Frame)
-
--- Create a ScreenGui to display FPS and Ping
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "PerformanceGui"
-ScreenGui.ResetOnSpawn = false -- Keep the UI persistent across respawns
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
--- Frame for FPS and Ping display
-local displayFrame = Instance.new("Frame")
-displayFrame.Size = UDim2.new(0, 250, 0, 100)
-displayFrame.Position = UDim2.new(0, 10, 0, 10)
-displayFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-displayFrame.BackgroundTransparency = 0.4
-displayFrame.BorderSizePixel = 0
-displayFrame.Active = true -- Make the frame active for input events
-displayFrame.Draggable = true -- Enable draggable frame
-displayFrame.Parent = ScreenGui
-
--- FPS Label
-local fpsLabel = Instance.new("TextLabel")
-fpsLabel.Size = UDim2.new(1, -20, 0, 40)
-fpsLabel.Position = UDim2.new(0, 10, 0, 10)
-fpsLabel.TextColor3 = Color3.new(1, 1, 1)
-fpsLabel.TextStrokeTransparency = 0.7
-fpsLabel.TextSize = 24
-fpsLabel.Font = Enum.Font.SourceSansBold
-fpsLabel.TextXAlignment = Enum.TextXAlignment.Left
-fpsLabel.BackgroundTransparency = 1
-fpsLabel.Text = "FPS: Loading..."
-fpsLabel.Parent = displayFrame
-
--- Ping Label
-local pingLabel = Instance.new("TextLabel")
-pingLabel.Size = UDim2.new(1, -20, 0, 40)
-pingLabel.Position = UDim2.new(0, 10, 0, 50)
-pingLabel.TextColor3 = Color3.new(1, 1, 1)
-pingLabel.TextStrokeTransparency = 0.7
-pingLabel.TextSize = 24
-pingLabel.Font = Enum.Font.SourceSansBold
-pingLabel.TextXAlignment = Enum.TextXAlignment.Left
-pingLabel.BackgroundTransparency = 1
-pingLabel.Text = "Ping: Loading..."
-pingLabel.Parent = displayFrame
-
--- FPS Checker
-local fps = 0
-local lastTime = tick()
-
-game:GetService("RunService").RenderStepped:Connect(function()
-    fps = math.floor(1 / (tick() - lastTime))
-    lastTime = tick()
-    fpsLabel.Text = "FPS: " .. tostring(fps)
-end)
-
--- Ping Checker
-local function getPing()
-    local player = game.Players.LocalPlayer
-    local ping = player:GetNetworkPing() * 1000 -- Convert to milliseconds
-    return math.floor(ping)
-end
-
-game:GetService("RunService").Stepped:Connect(function()
-    local ping = getPing()
-    pingLabel.Text = "Ping: " .. tostring(ping) .. " ms"
-end)
-
--- Optional: Auto-adjust label colors based on performance
-game:GetService("RunService").Stepped:Connect(function()
-    if fps < 30 then
-        fpsLabel.TextColor3 = Color3.new(1, 0, 0) -- Red for low FPS
-    else
-        fpsLabel.TextColor3 = Color3.new(0, 1, 0) -- Green for good FPS
-    end
-
-    if getPing() > 200 then
-        pingLabel.TextColor3 = Color3.new(1, 0, 0) -- Red for high ping
-    else
-        pingLabel.TextColor3 = Color3.new(0, 1, 0) -- Green for good ping
-    end
-end)
-
--- Optional: Saving frame position locally
-local function savePosition()
-    local pos = displayFrame.Position
-    -- Save the position to a datastore or local storage (optional implementation)
-end
-
--- Saving the position when dragging stops
-displayFrame.MouseLeave:Connect(savePosition)
-displayFrame.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        savePosition()
-    end
-end)
-loadstring(game:HttpGet("https://pastebin.com/raw/KiSYpej6",true))()
-  end
-})
-
-local Paragraph = AddParagraph(Main, {"مفيد | useful", "مفيد جداً"})
 AddButton(Main, {
   Name = "Rejoin | اعادة دخول الى سيرفر",
   Callback = function()
