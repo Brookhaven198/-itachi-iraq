@@ -912,87 +912,132 @@ end
 end
 
 
--- put your mainframe into the screengui that I have made (frame.Parent = gui) 
+-- Variáveis e funções para a visualização dos jogadores
+local viewEnabled = false
+local selectedViewPlayer = nil
+local characterAddedConnection = nil
 
-local GazerMain = Instance.new("Frame")
-GazerMain.Size = UDim2.new(0.4, 0, 0.4, 0)
-GazerMain.Position = UDim2.new(0.5, -GazerMain.Size.X.Offset / 2, 0.5, -GazerMain.Size.Y.Offset / 2)
-GazerMain.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-GazerMain.BackgroundTransparency = 0.2
-GazerMain.BorderSizePixel = 0
-GazerMain.Active = true
-GazerMain.Draggable = true
-GazerMain.Parent = gui
+local function toggleView(enabled)
+    if enabled then
+        if selectedViewPlayer then
+            local player = selectedViewPlayer
+            if player then
+                game.Workspace.CurrentCamera.CameraSubject = player.Character
+                if characterAddedConnection then
+                    characterAddedConnection:Disconnect()
+                end
+                characterAddedConnection = player.CharacterAdded:Connect(function(character)
+                    game.Workspace.CurrentCamera.CameraSubject = character
+                end)
+                MakeNotifi({
+                    Title = "Visualizando " .. player.Name,
+                    Text = "Você está visualizando o jogador: " .. player.Name,
+                    Time = 6
+                })
+            else
+                print("Jogador não encontrado.")
+                viewEnabled = false
+            end
+        else
+            print("Nenhum jogador selecionado para a visualização.")
+            viewEnabled = false
+        end
+    else
+        if characterAddedConnection then
+            characterAddedConnection:Disconnect()
+            characterAddedConnection = nil
+        end
+        game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
+    end
+end
 
-local UICorner = Instance.new("UICorner")
-UICorner.CornerRadius = UDim.new(0.1, 0)
-UICorner.Parent = GazerMain
+local value = "" -- Variável para armazenar o nome digitado
 
-local GazerTitle = Instance.new("TextLabel")
-GazerTitle.Size = UDim2.new(1, 0, 0.2, 0)
-GazerTitle.Position = UDim2.new(0, 0, 0, 0)
-GazerTitle.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-GazerTitle.BackgroundTransparency = 0.2
-GazerTitle.BorderSizePixel = 0
-GazerTitle.Text = "نسخ سكنات ITACHI "
-GazerTitle.TextScaled = true
-GazerTitle.Font = Enum.Font.GothamBold
-GazerTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-GazerTitle.Parent = GazerMain
+local function findPlayerByPartialNameOrNickname(partialName)
+    value = partialName -- Atualiza a variável com o nome digitado completo
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        if player.Name:lower():find(partialName:lower(), 1, true) or (player.DisplayName and player.DisplayName:lower():find(partialName:lower(), 1, true)) then
+            return player
+        end
+    end
+    return nil
+end
 
-local UICornerTitle = Instance.new("UICorner")
-UICornerTitle.CornerRadius = UDim.new(0.1, 0)
-UICornerTitle.Parent = GazerTitle
+-- Adicionando a caixa de texto para entrada do nome ou apelido do jogador
+AddTextBox(Main, {
+    Name = " ✨خلي يوزر الاعب✨",
+    Default = "",
+    PlaceholderText = "دخل اسم اللاعب",
+    ClearText = true,
+    Callback = function(value)
+        if value == "" then
+            MakeNotifi({
+                Title = "Erro",
+                Text = "Nome do jogador não foi digitado.",
+                Time = 5
+            })
+            if viewEnabled then
+                toggleView(false)
+            end
+            return
+        end
 
-local EnterName = Instance.new("TextBox")
-EnterName.Size = UDim2.new(0.85, 0, 0.2, 0)
-EnterName.Position = UDim2.new(0.075, 0, 0.3, 0)
-EnterName.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-EnterName.Text = ""
-EnterName.BackgroundTransparency = 0.2
-EnterName.BorderSizePixel = 0
-EnterName.PlaceholderText = "حط اول ثلاث احرف من اسم الشخص"
-EnterName.PlaceholderColor3 = Color3.fromRGB(150, 150, 150)
-EnterName.TextColor3 = Color3.fromRGB(255, 255, 255)
-EnterName.Font = Enum.Font.Gotham
-EnterName.TextScaled = true
-EnterName.ClearTextOnFocus = true
-EnterName.Parent = GazerMain
+        selectedViewPlayer = findPlayerByPartialNameOrNickname(value)
+        if selectedViewPlayer then
+            print("Jogador encontrado: " .. selectedViewPlayer.Name)
+            if viewEnabled then
+                toggleView(false)
+                toggleView(true)
+            end
+        else
+            MakeNotifi({
+                Title = "Erro",
+                Text = "Nenhum jogador encontrado com esse nome ou apelido.",
+                Time = 7
+            })
+            if viewEnabled then
+                toggleView(false)
+            end
+        end
+    end
+})
 
-local UICornerInput = Instance.new("UICorner")
-UICornerInput.CornerRadius = UDim.new(0.1, 0)
-UICornerInput.Parent = EnterName
+-- Adicionando o toggle para ativar/desativar a visualização
+AddToggle(Main, {
+    Name = "✨نسخ✨",
+    Default = false,
+    Callback = function(enabled)
+        viewEnabled = enabled
+        toggleView(enabled)
+    end
+})
 
-local INFO = Instance.new("TextButton")
-INFO.Size = UDim2.new(0.4, 0, 0.2, 0)
-INFO.Position = UDim2.new(0.3, 0, 0.7, 0)
-INFO.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-INFO.BackgroundTransparency = 0.2
-INFO.BorderSizePixel = 0
-INFO.Text = "نسخ"
-INFO.TextScaled = true
-
-INFO.Font = Enum.Font.GothamBold
-INFO.TextColor3 = Color3.fromRGB(255, 255, 255)
-INFO.Parent = GazerMain
-
-local UICornerButton = Instance.new("UICorner")
-UICornerButton.CornerRadius = UDim.new(0.1, 0)
-UICornerButton.Parent = INFO
-
-INFO.MouseButton1Click:Connect(function()
-    local displayName = EnterName.Text
-    
-    
-    INFO.Size = UDim2.new(0, 0, 0, 0)
-    
-    START(displayName)
-    wait(3)
-    INFO.Size = UDim2.new(0.4, 0, 0.2, 0)
-    
-    
-    
+-- Conectando eventos de jogador removido
+game.Players.PlayerRemoving:Connect(function(player)
+    if selectedViewPlayer == player then
+        selectedViewPlayer = nil
+        if viewEnabled then
+            toggleView(false)
+            MakeNotifi({
+                Title = "Jogador Saiu",
+                Text = player.Name .. " saiu do jogo. Visualização desativada.",
+                Time = 5
+            })
+        end
+    end
 end)
+
+-- Função para manter a câmera no jogador selecionado
+local function maintainView()
+    while wait() do
+        if viewEnabled and selectedViewPlayer then
+            local player = selectedViewPlayer
+            if player and game.Workspace.CurrentCamera.CameraSubject ~= player.Character then
+                game.Workspace.CurrentCamera.CameraSubject = player.Character
+            end
+        end
+    end
+end
 
 
 local Main = MakeTab({Name = "✨سكنات✨"})
