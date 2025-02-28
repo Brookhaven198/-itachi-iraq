@@ -508,7 +508,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 local Paragraph = AddParagraph(Main, {"✨اجـسـام ولـد✨"})
 
 AddButton(Main, {
-  Name = "✨جسم ولد✨",
+  Name = "✨S15جسم ولد✨",
   Callback = function()
 print("Clicked")local args = {
 [1] = "CharacterChange",
