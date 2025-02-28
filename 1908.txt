@@ -2121,114 +2121,6 @@ AddButton(Main, {
 })
 
 local Main = MakeTab({Name = "✨السيارة✨ "})
-
--- Adicionando a caixa de texto para entrada do nome ou apelido do jogador
-AddTextBox(Main, {
-    Name = " دخل اول ثلاث أحرف من اسم اللاعب",
-    Default = "",
-    PlaceholderText = "دخل اسم اللاعب",
-    ClearText = true,
-    Callback = function(value)
-        if value == "" then
-            MakeNotifi({
-                Title = "Erro",
-                Text = "Nome do jogador não foi digitado.",
-                Time = 5
-            })
-            if viewEnabled then
-                toggleView(false)
-            end
-            return
-        end
-
-        selectedViewPlayer = findPlayerByPartialNameOrNickname(value)
-        if selectedViewPlayer then
-            print("Jogador encontrado: " .. selectedViewPlayer.Name)
-            if viewEnabled then
-                toggleView(false)
-                toggleView(true)
-            end
-        else
-            MakeNotifi({
-                Title = "Erro",
-                Text = "Nenhum jogador encontrado com esse nome ou apelido.",
-                Time = 7
-            })
-            if viewEnabled then
-                toggleView(false)
-            end
-        end
-    end
-})
-
-AddButton(Main, {
-  Name = "اختفاء اللاعب",
-  Callback = function()
-    local args = {
-    [1] = "CharacterSizeUp",
-    [2] = 6
-}
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
-  end
-})
-AddButton(Main, {
-  Name = "إلغاء اختفاء",
-  Callback = function()
-    local args = {
-    [1] = "CharacterSizeUp",
-    [2] = 1
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
-  end
-})
--- Variável para controlar o estado do Noclip
-local noclipEnabled = false
-local runService = game:GetService("RunService")
-
--- Função para definir CanCollide para todas as partes do personagem
-local function setCharacterCanCollide(character, canCollide)
-    for _, part in ipairs(character:GetDescendants()) do
-        if part:IsA("BasePart") then
-            part.CanCollide = canCollide
-        end
-    end
-end
-
--- Função de callback para o botão de alternância de Noclip
-local function onNoclipToggle(value)
-    noclipEnabled = value
-    print("Noclip Enabled:", noclipEnabled)
-    
-    local player = game.Players.LocalPlayer
-    local character = player.Character
-
-    if noclipEnabled then
-        -- Inicia um loop para continuamente definir CanCollide
-        noclipLoop = runService.Stepped:Connect(function()
-            if character then
-                setCharacterCanCollide(character, false)
-            end
-        end)
-    else
-        -- Desativa o loop e restaura CanCollide
-        if noclipLoop then
-            noclipLoop:Disconnect()
-        end
-        if character then
-            setCharacterCanCollide(character, true)
-        end
-    end
-end
-
--- Adiciona o botão de alternância "Noclip"
-local Toggle = AddToggle(Main, {
-    Name = " اخترق الجدار",
-    Default = false,
-    Callback = onNoclipToggle
-})
-
-local Main = MakeTab({Name = "✨السيارة✨ "})
 local Paragraph = AddParagraph(Main, {" ✨ادخل كود الاغنية✨"})
 
 AddTextBox(Main, {
@@ -2672,7 +2564,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "شُـُـُُـُمـْـْْـْڛـ,ـ"
+    [2] = "شْمَسَ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2696,7 +2588,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "اسـراء"
+    [2] = "أَسَرٌأَء"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2719,7 +2611,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "زْهـرٍآء"
+    [2] = "زَهُرٌأَء"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2779,7 +2671,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "ريمـْـْْـْ"
+    [2] = "رٌيُمَ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2791,7 +2683,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "رقٌـ,ـية"
+    [2] = "رٌقُيُة"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2827,7 +2719,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "شُـُـُُـُﮩڊ"
+    [2] = "شْهُدُ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2871,7 +2763,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "مـــه̷̸̐ـﮃيَ"
+    [2] = "مَهُدُيُ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2883,7 +2775,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "حـًـًًـًًًـًًـًـڛـ,ـينـِِـِـ"
+    [2] = "حَسَيُنِ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2922,18 +2814,18 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "يَـوهـان"
+    [2] = "يُوٌهُأَنِ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
   end
 })
 AddButton(Main, {
-  Name = "مجتبى",
+  Name = "أَبَهُرٌ",
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "مـْـْْـْجـ,ـتـٌـٌٌـبـٌـٌٌـٌٌٌـٌٌـٌﮯ"
+    [2] = "أَبَهُرٌ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2944,7 +2836,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "ڛـ,ـآيكُـُوُ"
+    [2] = "سَأَيُﮖوٌ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2956,7 +2848,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "عٌـِـِِـِـبـٌـٌٌـٌٌٌـٌٌـٌآڛـ,ـ ~"
+    [2] = "عُبَأَسَ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2979,7 +2871,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "شُـُـُُـُﮩمـْـْْـْ"
+    [2] = "شًـھﻤ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -2987,11 +2879,11 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
 })
 
 AddButton(Main, {
-  Name = "ابو رقيه",
+  Name = "A҉F҉K҉",
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "آبـٌـٌٌـٌٌٌـٌٌـٌوُ رقٌـ,ـيﮩ"
+    [2] = "A҉F҉K҉"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -3003,7 +2895,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "مـْـْْـْرتـٌـٌٌـضﮯ"
+    [2] = "مَرٌتَضِى"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -3027,7 +2919,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "ڛـ,ـجـ,ـآڊ"
+    [2] = "سَجِأَدُ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -3039,7 +2931,7 @@ AddButton(Main, {
   Callback = function()
     local args = {
     [1] = "RolePlayName",
-    [2] = "تـٌـٌٌـوُمـْـْْـْ"
+    [2] = "تَوٌمَ"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -3224,7 +3116,7 @@ end
 
 -- Adicionando a caixa de texto para entrada do nome ou apelido do jogador
 AddTextBox(Main, {
-    Name = " دخل اول ثلاث أحرف من اسم اللاعب",
+    Name = " ✨خلي يوزر الاعب✨",
     Default = "",
     PlaceholderText = "دخل اسم اللاعب",
     ClearText = true,
@@ -3263,7 +3155,7 @@ AddTextBox(Main, {
 
 -- Adicionando o toggle para ativar/desativar a visualização
 AddToggle(Main, {
-    Name = "شاهد | View",
+    Name = "✨شاهد✨",
     Default = false,
     Callback = function(enabled)
         viewEnabled = enabled
@@ -3299,11 +3191,78 @@ local function maintainView()
 end
 
 AddButton(Main, {
-  Name = "Rejoin | اعادة دخول الى سيرفر",
+  Name = " ✨اعادة دخول الى سيرفر✨",
   Callback = function()
     local ts = game:GetService("TeleportService")
 				local p = game:GetService("Players").LocalPlayer
 				ts:Teleport(game.PlaceId, p)
     print('Hello!')
   end
+})
+
+AddButton(Main, {
+  Name = "✨اختفاء اللاعب✨",
+  Callback = function()
+    local args = {
+    [1] = "CharacterSizeUp",
+    [2] = 6
+}
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+  end
+})
+AddButton(Main, {
+  Name = "✨إلغاء اختفاء✨",
+  Callback = function()
+    local args = {
+    [1] = "CharacterSizeUp",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+  end
+})
+-- Variável para controlar o estado do Noclip
+local noclipEnabled = false
+local runService = game:GetService("RunService")
+
+-- Função para definir CanCollide para todas as partes do personagem
+local function setCharacterCanCollide(character, canCollide)
+    for _, part in ipairs(character:GetDescendants()) do
+        if part:IsA("BasePart") then
+            part.CanCollide = canCollide
+        end
+    end
+end
+
+-- Função de callback para o botão de alternância de Noclip
+local function onNoclipToggle(value)
+    noclipEnabled = value
+    print("Noclip Enabled:", noclipEnabled)
+    
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+
+    if noclipEnabled then
+        -- Inicia um loop para continuamente definir CanCollide
+        noclipLoop = runService.Stepped:Connect(function()
+            if character then
+                setCharacterCanCollide(character, false)
+            end
+        end)
+    else
+        -- Desativa o loop e restaura CanCollide
+        if noclipLoop then
+            noclipLoop:Disconnect()
+        end
+        if character then
+            setCharacterCanCollide(character, true)
+        end
+    end
+end
+
+-- Adiciona o botão de alternância "Noclip"
+local Toggle = AddToggle(Main, {
+    Name = " اخترق الجدار",
+    Default = false,
+    Callback = onNoclipToggle
 })
