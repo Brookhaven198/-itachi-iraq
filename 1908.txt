@@ -1,4 +1,10 @@
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+wait(0.1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "🗿🗿 ";
+    Text = " اشتركو قناتي تيك 🗿 "; -- ARAB TEAM
+    Duration = 5;
+})
 local args = {
     [1] = "RolePlayName",
     [2] = "✨ شكرا لاستخدامك السكربت يا حلو اتمنى ان يعجبك✨"
