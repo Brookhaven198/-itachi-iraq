@@ -1005,7 +1005,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 1
+    [2] = 11156841853
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -1050,7 +1050,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 124715581198006
+    [2] = 1
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
