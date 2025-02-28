@@ -1,5 +1,16 @@
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/VisualRoblox/Roblox/main/UI-Libraries/Visual%20Command%20UI%20Library/Source.lua', true))()
 
+local Window = Library:CreateWindow({
+    Name = 'صنع ب تطوير عراقي من قبل آشلي',
+    IntroText = 'سكربـت آشلي گانيس | Snake Hub Brookhaven 🏡',
+    IntroIcon = 'rbxassetid://16905163783',
+    IntroBlur = true,
+    IntroBlurIntensity = 15,
+    Theme = Library.Themes.dark,
+    Position = 'bottom',
+    Draggable = true,
+    Prefix = ';'
+})
 local args = {
     [1] = "RolePlayName",
     [2] = "✨ شكرا لاستخدامك السكربت يا حلو اتمنى ان يعجبك✨"
