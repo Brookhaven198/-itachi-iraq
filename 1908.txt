@@ -1100,7 +1100,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 })
 
 AddButton(Main, {
-  Name = "🧑سكن تنين ازرق رقم [1]🧑",
+  Name = "🧑سكن غـوجـو رقم [1]🧑",
   Callback = function()
 
 local args = {
@@ -1261,7 +1261,7 @@ local args = {
         [3] = 1,
         [4] = 1,
         [5] = 1,
-        [6] = 3210773801
+        [6] = 134082579
     },
     [3] = "Roblox20"
 }
