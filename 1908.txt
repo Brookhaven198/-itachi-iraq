@@ -3063,148 +3063,70 @@ local function onInfiniteJumpToggle(value)
     end
 end
 
--- Adicionando a caixa de texto para entrada do nome ou apelido do jogador
-AddTextBox(Main, {
-    Name = " دخل اول ثلاث أحرف من اسم اللاعب",
-    Default = "",
-    PlaceholderText = "دخل اسم اللاعب",
-    ClearText = true,
-    Callback = function(value)
-        if value == "" then
-            MakeNotifi({
-                Title = "Erro",
-                Text = "Nome do jogador não foi digitado.",
-                Time = 5
-            })
-            if viewEnabled then
-                toggleView(false)
-            end
-            return
-        end
+-- Adiciona o botão de alternância "Infinitejump"
+local Toggle = AddToggle(Main, {
+    Name = "قفز لا نهائي | Inf Jump",
+    Default = false,
+    Callback = onInfiniteJumpToggle
+})
+function MakeNotifi(notification)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = notification.Title;
+        Text = notification.Text;
+        Duration = notification.Time;
+    })
+end
 
-        selectedViewPlayer = findPlayerByPartialNameOrNickname(value)
+-- Variáveis e funções para a visualização dos jogadores
+local viewEnabled = false
+local selectedViewPlayer = nil
+local characterAddedConnection = nil
+
+local function toggleView(enabled)
+    if enabled then
         if selectedViewPlayer then
-            print("Jogador encontrado: " .. selectedViewPlayer.Name)
-            if viewEnabled then
-                toggleView(false)
-                toggleView(true)
+            local player = selectedViewPlayer
+            if player then
+                game.Workspace.CurrentCamera.CameraSubject = player.Character
+                if characterAddedConnection then
+                    characterAddedConnection:Disconnect()
+                end
+                characterAddedConnection = player.CharacterAdded:Connect(function(character)
+                    game.Workspace.CurrentCamera.CameraSubject = character
+                end)
+                MakeNotifi({
+                    Title = "Visualizando " .. player.Name,
+                    Text = "Você está visualizando o jogador: " .. player.Name,
+                    Time = 6
+                })
+            else
+                print("Jogador não encontrado.")
+                viewEnabled = false
             end
         else
-            MakeNotifi({
-                Title = "Erro",
-                Text = "Nenhum jogador encontrado com esse nome ou apelido.",
-                Time = 7
-            })
-            if viewEnabled then
-                toggleView(false)
-            end
+            print("Nenhum jogador selecionado para a visualização.")
+            viewEnabled = false
         end
-    end
-})
-
--- Adicionando o toggle para ativar/desativar a visualização
-AddToggle(Main, {
-    Name = "شاهد | View",
-    Default = false,
-    Callback = function(enabled)
-        viewEnabled = enabled
-        toggleView(enabled)
-    end
-})
-
--- Conectando eventos de jogador removido
-game.Players.PlayerRemoving:Connect(function(player)
-    if selectedViewPlayer == player then
-        selectedViewPlayer = nil
-        if viewEnabled then
-            toggleView(false)
-            MakeNotifi({
-                Title = "Jogador Saiu",
-                Text = player.Name .. " saiu do jogo. Visualização desativada.",
-                Time = 5
-            })
-        end
-    end
-end)
-
--- Função para manter a câmera no jogador selecionado
-local function maintainView()
-    while wait() do
-        if viewEnabled and selectedViewPlayer then
-            local player = selectedViewPlayer
-            if player and game.Workspace.CurrentCamera.CameraSubject ~= player.Character then
-                game.Workspace.CurrentCamera.CameraSubject = player.Character
-            end
-        end
-    end
-end
-
-local section = AddSection(Main, {"اذا احد طردك تقدر تؤخر الطرد"})
-local noclipEnabled = false
-local runService = game:GetService("RunService")
-
--- Função para definir CanCollide para todas as partes do personagem
-local function setCharacterCanCollide(character, canCollide)
-    for _, part in ipairs(character:GetDescendants()) do
-        if part:IsA("BasePart") then
-            part.CanCollide = canCollide
-        end
-    end
-end
-
--- Função de callback para o botão de alternância de Noclip
-local function onNoclipToggle(value)
-    noclipEnabled = value
-    print("Noclip Enabled:", noclipEnabled)
-    
-    local player = game.Players.LocalPlayer
-    local character = player.Character
-
-    if noclipEnabled then
-        -- Inicia um loop para continuamente definir CanCollide
-        noclipLoop = runService.Stepped:Connect(function()
-            if character then
-                setCharacterCanCollide(character, false)
-            end
-        end)
     else
-        -- Desativa o loop e restaura CanCollide
-        if noclipLoop then
-            noclipLoop:Disconnect()
+        if characterAddedConnection then
+            characterAddedConnection:Disconnect()
+            characterAddedConnection = nil
         end
-        if character then
-            setCharacterCanCollide(character, true)
-        end
+        game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
     end
 end
 
-local Paragraph = AddParagraph(Main, {"مفيد | useful", "مفيد جداً"})
-AddButton(Main, {
-  Name = "✨اعادة دخول الى سيرفر✨",
-  Callback = function()
-    local ts = game:GetService("TeleportService")
-				local p = game:GetService("Players").LocalPlayer
-				ts:Teleport(game.PlaceId, p)
-    print('Hello!')
-  end
-})
+local value = "" -- Variável para armazenar o nome digitado
 
-AddButton(Main, {
-  Name = "✨احذف جميع الأشياء الي في ايدك✨",
-  Callback = function()
-    local args = {
-    [1] = "ClearAllTools"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
-  end
-})
-AddButton(Main, {
-  Name = "✨اقتل نفسك✨",
-  Callback = function()
-    game.Players.LocalPlayer.Character.Humanoid.Health = 0
-  end
-})
+local function findPlayerByPartialNameOrNickname(partialName)
+    value = partialName -- Atualiza a variável com o nome digitado completo
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        if player.Name:lower():find(partialName:lower(), 1, true) or (player.DisplayName and player.DisplayName:lower():find(partialName:lower(), 1, true)) then
+            return player
+        end
+    end
+    return nil
+end
 
 -- Adicionando a caixa de texto para entrada do nome ou apelido do jogador
 AddTextBox(Main, {
@@ -3525,5 +3447,40 @@ AddButton(Main, {
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
+  end
+})
+AddButton(Main, {
+  Name = "اقتل نفسك",
+  Callback = function()
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+  end
+})
+AddButton(Main, {
+  Name = "ازالة لاق • Destroy Lag",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+  end
+})
+
+local Paragraph = AddParagraph(Main, {" سكربتات حمايـة فقط وقتل "})
+
+AddButton(Main, {
+  Name = "سـكـربـت يـقـتـل الـنـاس ب كـنـبـه ",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+  end
+})
+
+AddButton(Main, {
+  Name = "سكربـت يطير اي احد يفعل علـيك",
+  Callback = function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FE-Fling-GUI-10927"))()
+  end
+})
+
+AddButton(Main, {
+  Name = "سكربـت محد يقدر يطيركـك ",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))() 
   end
 })
