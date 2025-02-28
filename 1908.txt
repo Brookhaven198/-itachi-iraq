@@ -3029,10 +3029,11 @@ local function onInfiniteJumpToggle(value)
     end
 end
 
+-- Adicionando a caixa de texto para entrada do nome ou apelido do jogador
 AddTextBox(Main, {
-    Name = "✨ادخل اول ثلاث حروف من اسم الاعب✨",
+    Name = " دخل اول ثلاث أحرف من اسم اللاعب",
     Default = "",
-    PlaceholderText = "✨دخل اسم اللاعب✨",
+    PlaceholderText = "دخل اسم اللاعب",
     ClearText = true,
     Callback = function(value)
         if value == "" then
@@ -3069,7 +3070,7 @@ AddTextBox(Main, {
 
 -- Adicionando o toggle para ativar/desativar a visualização
 AddToggle(Main, {
-    Name = "✨مشاهده✨",
+    Name = "شاهد | View",
     Default = false,
     Callback = function(enabled)
         viewEnabled = enabled
@@ -3103,7 +3104,6 @@ local function maintainView()
         end
     end
 end
-
 local Paragraph = AddParagraph(Main, {"مفيد | useful", "مفيد جداً"})
 AddButton(Main, {
   Name = "✨اعادة دخول الى سيرفر✨",
