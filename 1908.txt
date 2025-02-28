@@ -920,6 +920,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 })
 
 local Paragraph = AddParagraph(Main, {"✨اجـسـام ولـد✨"})
+
 AddButton(Main, {
   Name = "🧑سكن تنين ازرق رقم [1]🧑",
   Callback = function()
