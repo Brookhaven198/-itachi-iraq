@@ -2700,7 +2700,7 @@ AddButton(Main, {
 
 local args = {
     [1] = "wearWalkStyle",
-    [2] = 14808889186
+    [2] = 14627127264
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
