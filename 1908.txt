@@ -2794,7 +2794,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):Fir
 })
 
 AddButton(Main, {
-  Name = "اغنية FUNk1",
+  Name = "FUNk1",
   Callback = function()
     	local args = {
     [1] = "SkateBoard"
@@ -2811,24 +2811,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):Fir
 })
 
 AddButton(Main, {
-  Name = "اغنية FUNk2",
-  Callback = function()
-    	local args = {
-    [1] = "SkateBoard"
-}
- 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
-local args = {
-    [1] = "PickingScooterMusicText",
-    [2] = "‎17422126596"
-}
- 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
-  end
-})
-
-AddButton(Main, {
-  Name = "اغنية FUNk3",
+  Name = "FUNK2",
   Callback = function()
     	local args = {
     [1] = "SkateBoard"
@@ -2837,7 +2820,7 @@ AddButton(Main, {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
 local args = {
     [1] = "PickingScooterMusicText",
-    [2] = "132155024282576"
+    [2] = "17422126596"
 }
  
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
@@ -2845,7 +2828,24 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):Fir
 })
 
 AddButton(Main, {
-  Name = "اغنية FUNK4",
+  Name = "FUNk3",
+  Callback = function()
+    	local args = {
+    [1] = "SkateBoard"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "120889371113999"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+  end
+})
+
+AddButton(Main, {
+  Name = "FUNK4",
   Callback = function()
     	local args = {
     [1] = "SkateBoard"
@@ -2862,7 +2862,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):Fir
 })
 
 AddButton(Main, {
-  Name = " 5اغنية Funk",
+  Name = "5FUNK",
   Callback = function()
     	local args = {
     [1] = "SkateBoard"
@@ -2896,7 +2896,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):Fir
 })
 
 AddButton(Main, {
-  Name = "اغنية FUNK6",
+  Name = "FUNK6",
   Callback = function()
     	local args = {
     [1] = "SkateBoard"
