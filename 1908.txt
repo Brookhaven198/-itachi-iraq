@@ -64,13 +64,13 @@ local Paragraph = AddParagraph(Main, {"حساباتي لل توصل معي لو 
 AddButton(Main, {
   Name = " انسخ حسابي تيك ",
   Callback = function()
-    setclipboard('bu_p01')
+    setclipboard('S_yku2')
   end
 })
 AddButton(Main, {
   Name = "حسابي الروب",
   Callback = function()
-    setclipboard('Dnawe1')
+    setclipboard('SAIF123321man7')
   end
 })
 
