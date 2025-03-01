@@ -952,10 +952,7 @@ AddTextBox(Main, {
 AddToggle(Main, {
     Name = "✨شاهد✨",
     Default = false,
-    Callback = function(enabled)
-        viewEnabled = enabled
-        toggleView(enabled)
-    end
+    Callback = function()
 })
 
 -- Conectando eventos de jogador removido
@@ -984,6 +981,7 @@ local function maintainView()
         end
     end
 end
+
 
 local Main = MakeTab({Name = "✨سكنات✨"})
 local Paragraph = AddParagraph(Main, {"✨حذف كل الاشياء الي في اليد✨"})
