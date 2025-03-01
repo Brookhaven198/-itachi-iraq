@@ -2,7 +2,7 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
 wait(0.1)
 game.StarterGui:SetCore("SendNotification", {
     Title = "☠️☠️ ";
-    Text = " تَمَ تَفعُيُلْ سَﮖزرٌبَتَ سَأَيُﮖوٌو "; -- ARAB TEAM
+    Text = " تعاون سايكو و ايتاشي "; -- ARAB TEAM
     Duration = 5;
 })
 local args = {
