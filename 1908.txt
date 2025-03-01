@@ -724,6 +724,27 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 
+AddButton(Main, {
+  Name = "✨جـسـم قطة ✨",
+  Callback = function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 14898536974,
+[2] = 117100468588140,
+[3] = 70510302204321,
+[4] = 131867900666415
+[5] = 88024891282027,
+[6] = 14898536975,
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
 local Main = MakeTab({Name = "✨سكنات✨"})
 local Paragraph = AddParagraph(Main, {"✨حذف كل الاشياء الي في اليد✨"})
 AddButton(Main, {
