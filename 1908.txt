@@ -1595,34 +1595,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 13307477554
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-wait(0.1)
-
-local args = {
-    [1] = "wear",
-    [2] = 15795056785
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-wait(0.1)
-
-local args = {
-    [1] = "wear",
-    [2] = 12563952028
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-wait(0.1)
-
-local args = {
-    [1] = "wear",
-    [2] = 11156841853
+    [2] = 118075313675296
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -1640,6 +1613,60 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
+    [2] = 13900309877
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(0.1)
+
+local args = {
+    [1] = "wear",
+    [2] = 5647159213
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(0.1)
+
+local args = {
+    [1] = "wear",
+    [2] = 18478290547
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(0.1)
+
+local args = {
+    [1] = "wear",
+    [2] = 115861658718315
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(0.1)
+
+local args = {
+    [1] = "wear",
+    [2] = 127079706322739
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(0.1)
+
+local args = {
+    [1] = "wear",
+    [2] = 8526638000
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(0.1)
+
+local args = {
+    [1] = "wear",
     [2] = 1
 }
 
@@ -1649,24 +1676,6 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 16139700318
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-wait(0.1)
-
-local args = {
-    [1] = "wear",
-    [2] = 13133257230
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-wait(0.1)
-
-local args = {
-    [1] = "wear",
     [2] = 1
 }
 
@@ -1676,16 +1685,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 116091391891300
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-wait(0.1)
-
-local args = {
-    [1] = "wear",
-    [2] = 13620518518
+    [2] = 1
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -1728,7 +1728,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 18510929286
+    [2] = 1
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -1737,7 +1737,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 7675094321
+    [2] = 1
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
