@@ -229,6 +229,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-to
   end
 })
 
+local Main = MakeTab({Name = "✨ صملات+تخريب✨"})
+AddButton(Main, {
+  Name = "✨تهكير السيارات✨ ",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/b7kDC3zp"))()
+  end
+})
+
 local Main = MakeTab({Name = "✨ رؤوس ورجل✨"})
 local Paragraph = AddParagraph(Main, {"✨الرؤوس✨", "bom dia meus manos"})
 AddButton(Main, {
