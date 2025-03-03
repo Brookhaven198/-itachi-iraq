@@ -2450,7 +2450,7 @@ local args = {
         [1] = 86499666,
         [2] = 27112039,
         [3] = 27112052,
-        [4] = 27112052,
+        [4] = 27112068,
         [5] = 27112056,
         [6] = 1
     },
@@ -2881,7 +2881,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 end
 })
 AddButton(Main, {
-  Name = " راس شعلة زرقه",
+  Name = " راس شعلة زرقة",
   Callback = function()
     local args = {
     [1] = "wearWalkStyle",
@@ -2892,11 +2892,99 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 end
 })
 AddButton(Main, {
-  Name = " راس شعله زرقه",
+  Name = " يسويك مجسم احمر ",
   Callback = function()
     local args = {
     [1] = "wearWalkStyle",
-    [2] = 183468963,
+    [2] = 17261638077,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+AddButton(Main, {
+  Name = " يسويك مجسم مدري وش وضعه😇 ",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 17750241321,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+AddButton(Main, {
+  Name = " حمامة اطلع ليزر ",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18934746119,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+AddButton(Main, {
+  Name = " راس جمجمة بشعله زرقة ",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 112243615546468,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+AddButton(Main, {
+  Name = " ورده بشعله حمراء على الضهر ",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15121280255,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+AddButton(Main, {
+  Name = " رأس تمثال يشبه ذا🗿 ",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 14291831890,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+AddButton(Main, {
+  Name = " حقيبة الغاز الستم ",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18148245935,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+AddButton(Main, {
+  Name = " رأس جمجمة بشعله زرقه ",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 102887469225690,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+AddButton(Main, {
+  Name = " يسويك بيت🗿 ",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 11151760263,
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
