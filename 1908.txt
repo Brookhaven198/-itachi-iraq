@@ -2577,7 +2577,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 1
+    [2] = 973771666
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -2648,7 +2648,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 
 local Main = MakeTab({Name = "✨المشيات✨ "})
 
-local Paragraph = AddParagraph(Main, {"✨ كل المشياات موجودة✨"})
+local Paragraph = AddParagraph(Main, {"✨ كل المشياات الجديدة✨"})
 
 AddButton(Main, {
   Name = "✨ مشية جديدة✨",
@@ -2837,12 +2837,12 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 })
 
 AddButton(Main, {
-  Name = "✨ مشية NFL✨",
+  Name = "✨ مشية للبنات✨",
   Callback = function()
 
 local args = {
     [1] = "wearWalkStyle",
-    [2] = 120071305586627
+    [2] = 16744219182
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -2851,7 +2851,7 @@ wait(1.0)
 
 local args = {
     [1] = "wearWalkStyle",
-    [2] = 101094325978637
+    [2] = 16744209868
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -2860,7 +2860,7 @@ wait(1.0)
 
 local args = {
     [1] = "wearWalkStyle",
-    [2] = 136750772888868
+    [2] = 16744214662
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -2869,7 +2869,7 @@ wait(1.0)
 
 local args = {
     [1] = "wearWalkStyle",
-    [2] = 84823620062362
+    [2] = 16744212581
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -2878,16 +2878,7 @@ wait(1.0)
 
 local args = {
     [1] = "wearWalkStyle",
-    [2] = 140600227095432
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-wait(1.0)
-
-local args = {
-    [1] = "wearWalkStyle",
-    [2] = 123307994439772
+    [2] = 16744204409
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
