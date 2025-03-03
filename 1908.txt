@@ -2433,7 +2433,7 @@ local args = {
         [1] = 1,
         [2] = 1,
         [3] = 1,
-        [4] = 1,
+        [4] = 27112068,
         [5] = 1,
         [6] = 1
     },
@@ -2639,6 +2639,255 @@ wait(0.1)
 local args = {
     [1] = "skintone",
     [2] = "Institutional white"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+  end
+})
+
+local Main = MakeTab({Name = "✨المشيات✨ "})
+
+local Paragraph = AddParagraph(Main, {"✨ كل المشياات موجودة✨"})
+
+AddButton(Main, {
+  Name = "✨ مشية جديدة✨",
+  Callback = function()
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 101279640971758
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 103190462987721
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 75036746190467
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 138641066989023
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 72106690305021
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 104741822987331
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 112231179705221
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+  end
+})
+
+AddButton(Main, {
+  Name = "✨ مشية البنات الدلوعين ✨",
+  Callback = function()
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 133304526526319
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 136276875045281
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 101839542383818
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 130373407996664
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 83937116921114
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+  end
+})
+
+AddButton(Main, {
+  Name = "✨ مشية Adidas sports ✨",
+  Callback = function()
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18538133604
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18538146480
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18538150608
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18538153691
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18538164337
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18538170170
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18538158932
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+  end
+})
+
+AddButton(Main, {
+  Name = "✨ مشية NFL✨",
+  Callback = function()
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 120071305586627
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 101094325978637
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 136750772888868
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 84823620062362
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 140600227095432
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 123307994439772
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
