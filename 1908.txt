@@ -224,9 +224,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%
 })
 
 AddButton(Main, {
-  Name = "✨سكربـت يطير اي احد يفعل علـيك✨",
+  Name = "✨سكربت مضاد✨",
   Callback = function()
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FE-Fling-GUI-10927"))()
+  end
+})
+
+AddButton(Main, {
+  Name = "✨سكربت مضاد  صنعي✨",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Brookhaven198/-itachi-iraq/refs/heads/main/مضاد"))()
   end
 })
 
