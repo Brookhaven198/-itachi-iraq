@@ -52,7 +52,7 @@ onof.TextColor3 = Color3.fromRGB(255, 255, 255)
 onof.TextSize = 14.000
 
 TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.Position = UDim2.new(0.469327301, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 100, 0, 28)
 TextLabel.Font = Enum.Font.SourceSans
@@ -100,7 +100,7 @@ mine.TextWrapped = true
 
 closebutton.Name = "اغلاق"
 closebutton.Parent = main.Frame
-closebutton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+closebutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 closebutton.Font = "SourceSans"
 closebutton.Size = UDim2.new(0, 45, 0, 28)
 closebutton.Text = "X"
@@ -118,7 +118,7 @@ mini.Position = UDim2.new(0, 44, -1, 27)
 
 mini2.Name = "minimize2"
 mini2.Parent = main.Frame
-mini2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+mini2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mini2.Font = "SourceSans"
 mini2.Size = UDim2.new(0, 45, 0, 28)
 mini2.Text = "+"
