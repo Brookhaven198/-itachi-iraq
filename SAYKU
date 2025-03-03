@@ -26,7 +26,7 @@ titleLabel.Name = "TitleLabel"
 titleLabel.Size = UDim2.new(0, 250, 0, 30)
 titleLabel.Position = UDim2.new(0, 0, 0, 0)
 titleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+titleLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 titleLabel.Text = "سكربت مضاد /ITACHI "
 titleLabel.Font = Enum.Font.SourceSans
 titleLabel.TextSize = 18
@@ -39,7 +39,7 @@ scriptButton.Size = UDim2.new(0, 180, 0, 40)
 scriptButton.Position = UDim2.new(0.5, -90, 0.6, -20)
 scriptButton.BackgroundColor3 = Color3.fromRGB(80, 120, 80)
 scriptButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-scriptButton.Text = "Activate Script"
+scriptButton.Text = "تشغيل"
 scriptButton.Font = Enum.Font.SourceSans
 scriptButton.TextSize = 16
 scriptButton.Parent = menuFrame
@@ -47,7 +47,7 @@ scriptButton.Parent = menuFrame
 
 scriptButton.MouseButton1Click:Connect(function()
     local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
-    workspace.FallenPartsDestroyHeight = -1000
+    workspace.FallenPartsDestroyHeight = -1100
     local lastCFrame = hrp.CFrame
     hrp.CFrame = CFrame.new(Vector3.new(0, -500, 0))
     wait(0.7)
