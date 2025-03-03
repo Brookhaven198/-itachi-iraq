@@ -47,12 +47,12 @@ scriptButton.Parent = menuFrame
 
 scriptButton.MouseButton1Click:Connect(function()
     local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
-    workspace.FallenPartsDestroyHeight = -50000
+    workspace.FallenPartsDestroyHeight = -189979
     local lastCFrame = hrp.CFrame
-    hrp.CFrame = CFrame.new(Vector3.new(0, 18989890999, 18980))
+    hrp.CFrame = CFrame.new(Vector3.new(0, -197282782707, -87))
     wait(0.7)
     hrp.CFrame = lastCFrame
-    workspace.FallenPartsDestroyHeight = -50000
+    workspace.FallenPartsDestroyHeight = -500
 end)
 
 
