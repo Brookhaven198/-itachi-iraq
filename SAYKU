@@ -16,7 +16,7 @@ local borderFrame = Instance.new("Frame")
 borderFrame.Name = "BorderFrame"
 borderFrame.Size = UDim2.new(1, 4, 1, 4)
 borderFrame.Position = UDim2.new(0, -2, 0, -2)
-borderFrame.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+borderFrame.BackgroundColor3 = Color3.fromHSV(0, 0, 0)
 borderFrame.BorderSizePixel = 0
 borderFrame.Parent = menuFrame
 
@@ -37,8 +37,8 @@ local scriptButton = Instance.new("TextButton")
 scriptButton.Name = "ScriptButton"
 scriptButton.Size = UDim2.new(0, 180, 0, 40)
 scriptButton.Position = UDim2.new(0.5, -90, 0.6, -20)
-scriptButton.BackgroundColor3 = Color3.fromRGB(80, 120, 80)
-scriptButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+scriptButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scriptButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 scriptButton.Text = "تشغيل"
 scriptButton.Font = Enum.Font.SourceSans
 scriptButton.TextSize = 16
@@ -47,12 +47,12 @@ scriptButton.Parent = menuFrame
 
 scriptButton.MouseButton1Click:Connect(function()
     local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
-    workspace.FallenPartsDestroyHeight = -1100
+    workspace.FallenPartsDestroyHeight = -50000
     local lastCFrame = hrp.CFrame
-    hrp.CFrame = CFrame.new(Vector3.new(0, -500, 0))
+    hrp.CFrame = CFrame.new(Vector3.new(0, 18989890999, 18980))
     wait(0.7)
     hrp.CFrame = lastCFrame
-    workspace.FallenPartsDestroyHeight = -500
+    workspace.FallenPartsDestroyHeight = -50000
 end)
 
 
@@ -90,5 +90,5 @@ game:GetService("RunService").Stepped:Connect(function()
     end
     
     
-    borderFrame.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+    borderFrame.BackgroundColor3 = Color3.fromHSV(0, 0, 0)
 end)
