@@ -48,10 +48,10 @@ MakeWindow({
 MinimizeButton({
   Image = "rbxassetid://115714662895227",
   Size = {50, 50},
-  Color = Color3.fromRGB(240, 240, 240),
+  Color = Color3.fromRGB(100, 100, 100),
   Corner = true,
   Stroke = true,
-  StrokeColor = Color3.fromRGB(240, 240, 240)
+  StrokeColor = Color3.fromRGB(100, 100, 100)
 })
 
 
@@ -2458,9 +2458,8 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
   end
 })
 
-local Paragraph = AddParagraph(Main, {"✨سكنات ولد كوبي ✨"})
 AddButton(Main, {
-  Name = "🧑سكن كوبي [1]🧑",
+  Name = "🧑سكن كوبي [5]🧑",
   Callback = function()
 
 local args = {
