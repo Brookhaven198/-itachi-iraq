@@ -732,7 +732,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 
-local Main = MakeTab({Name = "✨سكنات✨"})
+local Main = MakeTab({Name = "✨سكنات ايمو✨"})
 local Paragraph = AddParagraph(Main, {"✨حذف كل الاشياء الي في اليد✨"})
 AddButton(Main, {
   Name = "✨حذف كل الاشياء الي في اليد✨",
@@ -1570,7 +1570,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
   end
 })
 
-local Paragraph = AddParagraph(Main, {"✨سكنات ولـد✨"})
+local Paragraph = AddParagraph(Main, {"✨ سكنات ولد ✨"})
 
 AddButton(Main, {
   Name = "🧑سكن تنين ازرق رقم [1]🧑",
@@ -2422,8 +2422,9 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
   end
 })
 
+local Paragraph = AddParagraph(Main, {"✨سكنات ولد كوبي ✨"})
 AddButton(Main, {
-  Name = "🧑سكن تنين ابيض رقم [4]🧑",
+  Name = "🧑سكن كوبي [1]🧑",
   Callback = function()
 
 local args = {
@@ -2486,7 +2487,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 2
+    [2] = 15477907186
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -2495,7 +2496,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 3
+    [2] = 14936461771
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -2504,7 +2505,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 4
+    [2] = 4508445398
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -2513,7 +2514,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 5
+    [2] = 119622708723966
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -2522,7 +2523,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 6
+    [2] = 12976588576
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -2531,7 +2532,7 @@ wait(0.1)
 
 local args = {
     [1] = "wear",
-    [2] = 7
+    [2] = 1
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
@@ -2647,10 +2648,10 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 
 local Main = MakeTab({Name = "✨الشعر|ايتم✨ "})
 
-local Paragraph = AddParagraph(Main, {"✨دمج شعر اولاد✨"})
+local Paragraph = AddParagraph(Main, {"✨دمج شعر ايمو✨"})
 
 AddButton(Main, {
-  Name = "✨اضغط لدمج الاسود✨",
+  Name = "✨دمج ايمو اسود✨",
   Callback = function()
 
 local args = {
@@ -2691,7 +2692,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 })
 
 AddButton(Main, {
-  Name = "✨اضغط لدمج البني✨",
+  Name = "✨دمج ايمو بني✨",
   Callback = function()
 
 local args = {
@@ -2732,7 +2733,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
 })
 
 AddButton(Main, {
-  Name = "✨اضغط لدمج الابيض✨",
+  Name = "✨ دمج اايمو ابيض✨",
   Callback = function()
 
 local args = {
@@ -2772,6 +2773,135 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireSe
   end
 })
 
+local Paragraph = AddParagraph(Main, {"✨دمج شعر كوبي ولد&بنات✨"})
+AddButton(Main, {
+  Name = "✨ دمج شعر كوبي للولد✨",
+  Callback = function()
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 99430371515995
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15477907186
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+  end
+})
+
+AddButton(Main, {
+  Name = "✨ دمج شعر كوبي للبنات✨",
+  Callback = function()
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 121883272037076
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15477907186
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+  end
+})
+
+local Paragraph = AddParagraph(Main, {"✨ايتمات✨"})
+
+AddButton(Main, {
+  Name = "بخاخ اسود ",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 86792218369662,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+AddButton(Main, {
+  Name = "بخاخ ابيض",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 72392852231467,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+AddButton(Main, {
+  Name = " راس شعلة زرقه",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 183468963,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+AddButton(Main, {
+  Name = " راس شعله زرقه",
+  Callback = function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 183468963,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
 local Main = MakeTab({Name = " ✨الاغاني✨"})
 local section = AddSection(Main, {"✨ادخل كود الاغنية✨"})
  
