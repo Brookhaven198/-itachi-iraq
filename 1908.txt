@@ -7,7 +7,7 @@ game.StarterGui:SetCore("SendNotification", {
 })
 local args = {
     [1] = "RolePlayName",
-    [2] = "✨ شكرا لاستخدامك السكربت يا حلو اتمنى ان يعجبك✨"
+    [2] = "✨ شكرآ لاستخدامك السكربت اتمنى ان يعجبك✨"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -48,10 +48,10 @@ MakeWindow({
 MinimizeButton({
   Image = "rbxassetid://115714662895227",
   Size = {50, 50},
-  Color = Color3.fromRGB(255, 100, 100),
+  Color = Color3.fromRGB(255, 0, 0),
   Corner = true,
   Stroke = true,
-  StrokeColor = Color3.fromRGB(255, 100, 100)
+  StrokeColor = Color3.fromRGB(255, 0, 0)
 })
 
 
