@@ -460,5 +460,4 @@ local Dropdown = AddDropdown(Main, {
   Default = "2",
   Callback = function(selectedplrName)
     plrs:FindFirstChild(selectedplrName)
-        local targetPlayer = plrs:FindFirstChild(selectedplrName)
-        if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+        
