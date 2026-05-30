@@ -884,6 +884,40 @@ BackgroundImage.ImageTransparency = 0
 BackgroundImage.ScaleType = Enum.ScaleType.Stretch
 BackgroundImage.ZIndex = 0
 
+local CenterImage = Instance.new("ImageLabel")
+
+CenterImage.Name = "CenterImage"
+
+CenterImage.Parent = MainWindow
+
+CenterImage.Size = UDim2.new(0, 220, 0, 220)
+
+CenterImage.AnchorPoint = Vector2.new(0.5, 0.5)
+
+CenterImage.Position = UDim2.new(0.5, 0, 0.5, 0)
+
+CenterImage.BackgroundTransparency = 1
+
+CenterImage.Image = "rbxassetid://115689542617480" -- ID الصورة الدائرية
+
+CenterImage.ZIndex = 1
+
+local Corner = Instance.new("UICorner")
+
+Corner.CornerRadius = UDim.new(1, 0)
+
+Corner.Parent = CenterImage
+
+local RunService = game:GetService("RunService")
+
+RunService.Heartbeat:Connect(function(dt)
+
+	if CenterImage and CenterImage.Parent then
+		CenterImage.Rotation = (CenterImage.Rotation + 40 * dt) % 360
+	end
+
+end)
+
 -- شاشة البداية
 local function LoadSequence()
 	MainWindow.Visible = false
