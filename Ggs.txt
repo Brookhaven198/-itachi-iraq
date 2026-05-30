@@ -916,7 +916,7 @@ FrontImage.Size = UDim2.new(0, 120, 0, 380)
 FrontImage.AnchorPoint = Vector2.new(0.5, 0.5)
 FrontImage.Position = UDim2.new(0.5, 0, 0.55, 0)
 FrontImage.BackgroundTransparency = 1
-FrontImage.Image = "rbxassetid://121063781343551"
+FrontImage.Image = "rbxassetid://ايدي_الصورة"
 FrontImage.ZIndex = 2
 
 
