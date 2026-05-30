@@ -899,7 +899,7 @@ CenterImage.Position = UDim2.new(0.5, 0, 0.5, 0)
 
 CenterImage.BackgroundTransparency = 1
 
-CenterImage.Image = "rbxassetid://88337253597811" -- ID الصورة الدائرية
+CenterImage.Image = "rbxassetid://132134759906192" -- ID الصورة الدائرية
 
 CenterImage.ZIndex = 1
 
@@ -916,7 +916,7 @@ FrontImage.Size = UDim2.new(0, 120, 0, 380)
 FrontImage.AnchorPoint = Vector2.new(0.5, 0.5)
 FrontImage.Position = UDim2.new(0.5, 0, 0.55, 0)
 FrontImage.BackgroundTransparency = 1
-FrontImage.Image = "rbxassetid://115686652838064"
+FrontImage.Image = "rbxassetid://112891579443717"
 FrontImage.ZIndex = 2
 
 
