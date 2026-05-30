@@ -607,6 +607,7 @@ local WindowName = AddThemeObject(SetProps(MakeElement("Label", WindowConfig.Nam
 }), "Text")
 
 local WindowTopBarLine = AddThemeObject(SetProps(MakeElement("Frame"), {
+	Visible = false,
 	Size = UDim2.new(1, 0, 0, 1),
 	Position = UDim2.new(0, 0, 1, -1)
 }), "Stroke")
@@ -890,7 +891,7 @@ CenterImage.Name = "CenterImage"
 
 CenterImage.Parent = MainWindow
 
-CenterImage.Size = UDim2.new(0, 270, 0, 270)
+CenterImage.Size = UDim2.new(0, 220, 0, 220)
 
 CenterImage.AnchorPoint = Vector2.new(0.5, 0.5)
 
@@ -2427,3 +2428,4 @@ function OrionLib:Destroy()
 end
 
 return OrionLib
+
