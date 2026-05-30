@@ -912,11 +912,11 @@ Corner.Parent = CenterImage
 local FrontImage = Instance.new("ImageLabel")
 FrontImage.Name = "FrontImage"
 FrontImage.Parent = MainWindow
-FrontImage.Size = UDim2.new(0, 120, 0, 380)
+FrontImage.Size = UDim2.new(0, 120, 0, 250)
 FrontImage.AnchorPoint = Vector2.new(0.5, 0.5)
 FrontImage.Position = UDim2.new(0.5, 0, 0.55, 0)
 FrontImage.BackgroundTransparency = 1
-FrontImage.Image = "rbxassetid://74604197097836"
+FrontImage.Image = "rbxassetid://117463113643906"
 FrontImage.ZIndex = 2
 
 
