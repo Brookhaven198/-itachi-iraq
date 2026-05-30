@@ -640,7 +640,7 @@ local UserInputService = game:GetService("UserInputService")
 
 -- Toggle Frame
 local ToggleFrame = Instance.new("Frame")
-ToggleFrame.Size = UDim2.new(0, 145, 0, 35)
+ToggleFrame.Size = UDim2.new(0, 60, 0, 60)
 ToggleFrame.AnchorPoint = Vector2.new(0.5, 0)
 ToggleFrame.Position = UDim2.new(0.5, -10, 0, -50)
 ToggleFrame.BackgroundTransparency = 1
@@ -648,7 +648,7 @@ ToggleFrame.Visible = false
 ToggleFrame.Parent = Orion
 
 local frameCorner = Instance.new("UICorner")
-frameCorner.CornerRadius = UDim.new(0, 10)
+frameCorner.CornerRadius = UDim.new(1, 0)
 frameCorner.Parent = ToggleFrame
 
 local frameStroke = Instance.new("UIStroke")
@@ -676,7 +676,7 @@ end)
 
 -- Toggle Button
 local ToggleBtn = Instance.new("TextButton")
-ToggleBtn.Size = UDim2.new(0, 145, 0, 36)
+ToggleBtn.Size = UDim2.new(0, 60, 0, 60)
 ToggleBtn.Position = UDim2.new(0.5, -10, 0, -50)
 ToggleBtn.AnchorPoint = Vector2.new(0.5, 0)
 ToggleBtn.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
@@ -685,7 +685,7 @@ ToggleBtn.Visible = false
 ToggleBtn.Parent = Orion
 
 local corner = Instance.new("UICorner")
-corner.CornerRadius = UDim.new(0, 8)
+corner.CornerRadius = UDim.new(1, 0)
 corner.Parent = ToggleBtn
 
 local ToggleIcon = Instance.new("ImageLabel")
@@ -695,11 +695,34 @@ ToggleIcon.BackgroundTransparency = 1
 ToggleIcon.Image = "rbxassetid://108584636372574"
 ToggleIcon.Parent = ToggleBtn
 
+local OuterImage = Instance.new("ImageLabel")
+OuterImage.Name = "OuterImage"
+OuterImage.Parent = ToggleBtn
+OuterImage.Size = UDim2.new(0, 70, 0, 70)
+OuterImage.AnchorPoint = Vector2.new(0.5, 0.5)
+OuterImage.Position = UDim2.new(0.5, 0, 0.5, 0)
+OuterImage.BackgroundTransparency = 1
+OuterImage.Image = "rbxassetid://ضع_ايدي_الصورة_الكبيرة"
+OuterImage.ZIndex = 1
+
+local OuterCorner = Instance.new("UICorner")
+OuterCorner.CornerRadius = UDim.new(1,0)
+OuterCorner.Parent = OuterImage
+
+ToggleIcon.Size = UDim2.new(0, 45, 0, 45)
+ToggleIcon.AnchorPoint = Vector2.new(0.5,0.5)
+ToggleIcon.Position = UDim2.new(0.5,0,0.5,0)
+ToggleIcon.ZIndex = 2
+ToggleIcon.Active = false
+OuterImage.Active = false
+
+
+
 local ToggleLabel = Instance.new("TextLabel")
 ToggleLabel.Size = UDim2.new(1, -40, 1, 0)
 ToggleLabel.Position = UDim2.new(0, 35, 0, 0)
 ToggleLabel.BackgroundTransparency = 1
-ToggleLabel.Text = "فتح الواجها | Open"
+ToggleLabel.Text = ""
 ToggleLabel.Font = Enum.Font.GothamBold
 ToggleLabel.TextSize = 16
 ToggleLabel.TextColor3 = Color3.fromRGB(0,0,0)
@@ -885,6 +908,18 @@ local Corner = Instance.new("UICorner")
 Corner.CornerRadius = UDim.new(1, 0)
 
 Corner.Parent = CenterImage
+
+local FrontImage = Instance.new("ImageLabel")
+FrontImage.Name = "FrontImage"
+FrontImage.Parent = MainWindow
+FrontImage.Size = UDim2.new(0, 120, 0, 380)
+FrontImage.AnchorPoint = Vector2.new(0.5, 0.5)
+FrontImage.Position = UDim2.new(0.5, 0, 0.55, 0)
+FrontImage.BackgroundTransparency = 1
+FrontImage.Image = "rbxassetid://ايدي_الصورة"
+FrontImage.ZIndex = 2
+
+
 
 local RunService = game:GetService("RunService")
 
