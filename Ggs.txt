@@ -891,7 +891,7 @@ CenterImage.Name = "CenterImage"
 
 CenterImage.Parent = MainWindow
 
-CenterImage.Size = UDim2.new(0, 270, 0, 270)
+CenterImage.Size = UDim2.new(0, 220, 0, 220)
 
 CenterImage.AnchorPoint = Vector2.new(0.5, 0.5)
 
@@ -2428,4 +2428,3 @@ function OrionLib:Destroy()
 end
 
 return OrionLib
-
