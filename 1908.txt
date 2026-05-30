@@ -28,3 +28,30 @@ ProfileTab:AddParagraph(
     "صورة الحساب",
     "https://www.roblox.com/headshot-thumbnail/image?userId=10978045177&width=420&height=420&format=png"
 )
+
+local ProfileTab = Window:MakeTab({
+    Name = "البروفايل",
+    Icon = "rbxassetid://112",
+    PremiumOnly = false
+})
+
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 0, 120)
+Frame.BackgroundTransparency = 1
+Frame.Parent = ProfileTab.Container
+
+local Image = Instance.new("ImageLabel")
+Image.Size = UDim2.new(0, 90, 0, 90)
+Image.Position = UDim2.new(0, 10, 0, 10)
+Image.BackgroundTransparency = 1
+Image.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=10978045177&width=420&height=420&format=png"
+Image.Parent = Frame
+
+local Name = Instance.new("TextLabel")
+Name.Size = UDim2.new(1, -110, 0, 90)
+Name.Position = UDim2.new(0, 110, 0, 10)
+Name.BackgroundTransparency = 1
+Name.Text = "Martin"
+Name.TextSize = 22
+Name.TextXAlignment = Enum.TextXAlignment.Left
+Name.Parent = Frame
