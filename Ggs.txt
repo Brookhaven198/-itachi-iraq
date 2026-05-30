@@ -891,7 +891,7 @@ CenterImage.Name = "CenterImage"
 
 CenterImage.Parent = MainWindow
 
-CenterImage.Size = UDim2.new(0, 220, 0, 220)
+CenterImage.Size = UDim2.new(0, 270, 0, 270)
 
 CenterImage.AnchorPoint = Vector2.new(0.5, 0.5)
 
@@ -914,7 +914,7 @@ local RunService = game:GetService("RunService")
 RunService.Heartbeat:Connect(function(dt)
 
 	if CenterImage and CenterImage.Parent then
-		CenterImage.Rotation = (CenterImage.Rotation + 40 * dt) % 360
+		CenterImage.Rotation = (CenterImage.Rotation + 150 * dt) % 360
 	end
 
 end)
