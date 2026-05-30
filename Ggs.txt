@@ -899,7 +899,7 @@ CenterImage.Position = UDim2.new(0.5, 0, 0.5, 0)
 
 CenterImage.BackgroundTransparency = 1
 
-CenterImage.Image = "rbxassetid://96075234628176" -- ID الصورة الدائرية
+CenterImage.Image = "rbxassetid://97084495204045" -- ID الصورة الدائرية
 
 CenterImage.ZIndex = 1
 
