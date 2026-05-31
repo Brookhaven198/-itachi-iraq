@@ -689,7 +689,7 @@ corner.CornerRadius = UDim.new(1, 0)
 corner.Parent = ToggleBtn
 
 local ToggleIcon = Instance.new("ImageLabel")
-ToggleIcon.Size = UDim2.new(0, 120, 0, 90)
+ToggleIcon.Size = UDim2.new(0, 999, 0, 999)
 ToggleIcon.AnchorPoint = Vector2.new(0.5, 0.5)
 ToggleIcon.Position = UDim2.new(0.5, 0, 0.5, 0)
 ToggleIcon.BackgroundTransparency = 1
@@ -704,7 +704,7 @@ ToggleCorner.Parent = ToggleIcon
 local OuterImage = Instance.new("ImageLabel")
 OuterImage.Name = "OuterImage"
 OuterImage.Parent = ToggleBtn
-OuterImage.Size = UDim2.new(0, 100, 0, 90)
+OuterImage.Size = UDim2.new(0, 90, 0, 90)
 OuterImage.AnchorPoint = Vector2.new(0.5, 0.5)
 OuterImage.Position = UDim2.new(0.5, 0, 0.5, 0)
 OuterImage.BackgroundTransparency = 1
