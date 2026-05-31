@@ -652,7 +652,7 @@ frameCorner.CornerRadius = UDim.new(1, 0)
 frameCorner.Parent = ToggleFrame
 
 local frameStroke = Instance.new("UIStroke")
-frameStroke.Thickness = 4
+frameStroke.Thickness = 0
 frameStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 frameStroke.Parent = ToggleFrame
 
@@ -689,21 +689,40 @@ corner.CornerRadius = UDim.new(1, 0)
 corner.Parent = ToggleBtn
 
 local ToggleIcon = Instance.new("ImageLabel")
-ToggleIcon.Size = UDim2.new(0, 20, 0, 20)
-ToggleIcon.Position = UDim2.new(0, 10, 0.5, -10)
+ToggleIcon.Size = UDim2.new(0, 45, 0, 45)
+ToggleIcon.AnchorPoint = Vector2.new(0.5, 0.5)
+ToggleIcon.Position = UDim2.new(0.5, 0, 0.5, 0)
 ToggleIcon.BackgroundTransparency = 1
 ToggleIcon.Image = "rbxassetid://111063598806194"
+ToggleIcon.ZIndex = 2
 ToggleIcon.Parent = ToggleBtn
+
+local ToggleCorner = Instance.new("UICorner")
+ToggleCorner.CornerRadius = UDim.new(1,0)
+ToggleCorner.Parent = ToggleIcon
 
 local OuterImage = Instance.new("ImageLabel")
 OuterImage.Name = "OuterImage"
 OuterImage.Parent = ToggleBtn
-OuterImage.Size = UDim2.new(0, 110, 0, 100)
+OuterImage.Size = UDim2.new(0, 100, 0, 100)
 OuterImage.AnchorPoint = Vector2.new(0.5, 0.5)
 OuterImage.Position = UDim2.new(0.5, 0, 0.5, 0)
 OuterImage.BackgroundTransparency = 1
 OuterImage.Image = "rbxassetid://116973783760055"
 OuterImage.ZIndex = 1
+
+local OuterCorner = Instance.new("UICorner")
+OuterCorner.CornerRadius = UDim.new(1,0)
+OuterCorner.Parent = OuterImage
+
+ToggleBtn.BorderSizePixel = 0
+
+local RunService = game:GetService("RunService")
+RunService.Heartbeat:Connect(function(dt)
+	if OuterImage and OuterImage.Parent then
+		OuterImage.Rotation = (OuterImage.Rotation + 120 * dt) % 360
+	end
+end)
 
 local OuterCorner = Instance.new("UICorner")
 OuterCorner.CornerRadius = UDim.new(1,0)
