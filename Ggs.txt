@@ -689,7 +689,7 @@ corner.CornerRadius = UDim.new(1, 0)
 corner.Parent = ToggleBtn
 
 local ToggleIcon = Instance.new("ImageLabel")
-ToggleIcon.Size = UDim2.new(0, 20, 0, 20)
+ToggleIcon.Size = UDim2.new(0, 200, 0, 200)
 ToggleIcon.Position = UDim2.new(0, 10, 0.5, -10)
 ToggleIcon.BackgroundTransparency = 1
 ToggleIcon.Image = "rbxassetid://108584636372574"
