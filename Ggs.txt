@@ -692,17 +692,17 @@ local ToggleIcon = Instance.new("ImageLabel")
 ToggleIcon.Size = UDim2.new(0, 20, 0, 20)
 ToggleIcon.Position = UDim2.new(0, 10, 0.5, -10)
 ToggleIcon.BackgroundTransparency = 1
-ToggleIcon.Image = "rbxassetid://108584636372574"
+ToggleIcon.Image = "rbxassetid://111063598806194"
 ToggleIcon.Parent = ToggleBtn
 
 local OuterImage = Instance.new("ImageLabel")
 OuterImage.Name = "OuterImage"
 OuterImage.Parent = ToggleBtn
-OuterImage.Size = UDim2.new(0, 100, 0, 100)
+OuterImage.Size = UDim2.new(0, 110, 0, 100)
 OuterImage.AnchorPoint = Vector2.new(0.5, 0.5)
 OuterImage.Position = UDim2.new(0.5, 0, 0.5, 0)
 OuterImage.BackgroundTransparency = 1
-OuterImage.Image = "rbxassetid://114498569035453"
+OuterImage.Image = "rbxassetid://116973783760055"
 OuterImage.ZIndex = 1
 
 local OuterCorner = Instance.new("UICorner")
