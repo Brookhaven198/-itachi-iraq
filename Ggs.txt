@@ -708,7 +708,7 @@ OuterImage.Size = UDim2.new(0, 90, 0, 90)
 OuterImage.AnchorPoint = Vector2.new(0.5, 0.5)
 OuterImage.Position = UDim2.new(0.5, 0, 0.5, 0)
 OuterImage.BackgroundTransparency = 1
-OuterImage.Image = "rbxassetid://116973783760055"
+OuterImage.Image = "rbxassetid://136787395176151"
 OuterImage.ZIndex = 1
 
 local OuterCorner = Instance.new("UICorner")
@@ -935,7 +935,7 @@ FrontImage.Size = UDim2.new(0, 240, 0, 300)
 FrontImage.AnchorPoint = Vector2.new(0.5, 0.5)
 FrontImage.Position = UDim2.new(0.5, 0, 0.55, 0)
 FrontImage.BackgroundTransparency = 1
-FrontImage.Image = "rbxassetid://134532380359597"
+FrontImage.Image = "rbxassetid://76963982710423"
 FrontImage.ZIndex = 2
 
 
